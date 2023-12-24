@@ -1,0 +1,54 @@
+version: '3.9'
+services:
+  server:
+    container_name: sport-connect-api
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - static:/app/static
+      - media:/app/media
+    env_file:
+      - ".env"
+    ports:
+      - "8000:8000"
+    depends_on:
+      database:
+        condition: service_started
+
+  database:
+    image: postgres:15
+    container_name: sport-connect-api-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: sport_connect_db
+    volumes:
+      - sport-connect-api-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    container_name: sport-connect-api-redis
+    ports:
+      - "6379:6379"
+
+  nginx:
+    container_name: sport-connect-nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-conf.d:/etc/nginx/nginx-conf.d
+      - static:/app/static
+      - media:/app/media
+    depends_on:
+      server:
+        condition: service_started
+
+volumes:
+  static:
+  media:
+  sport-connect-api-data:

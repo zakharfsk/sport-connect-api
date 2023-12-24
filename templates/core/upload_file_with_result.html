@@ -1,0 +1,24 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link href="/static/admin/css/base.css" rel="stylesheet">
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
+
+{% block content %}
+
+    <form method="post" action="{% url 'core:upload_result' %}" id="form_get_file_with_results" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="result_file">File</label>
+        <input type="file" name="file_with_results" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <input type="submit" class="button" value="Submit">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+{% endblock %}

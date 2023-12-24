@@ -1,0 +1,34 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+{% block extrastyle %}
+    {{ block.super }}
+    <link href="/static/admin/css/base.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="module">
+        <table>
+            <caption>
+                <div class="section">Утіліти</div>
+            </caption>
+            <tbody>
+            <tr class="model-group">
+                <th style="display: flex;">
+                    <div style="margin: 10px;">
+                        <a href="{% url 'core:get_file' %}" type="submit" class="button">
+                            Вигрузка таблиці
+                        </a>
+                    </div>
+                    <div style="margin: 10px;">
+                        <a href="{% url 'core:upload_result' %}" type="submit" class="button">
+                            Загрузити результати
+                        </a>
+                    </div>
+                </th>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

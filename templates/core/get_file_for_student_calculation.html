@@ -1,0 +1,66 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link href="/static/admin/css/base.css" rel="stylesheet">
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
+
+{% block content %}
+
+    <form method="post" action="{% url 'core:get_file' %}" id="form_get_file">
+        {% csrf_token %}
+        <label for="list_schools">Schools</label>
+        <select id="list_schools" name="choose_school">
+            <option></option>
+        </select><br><br>
+        <label for="list_classroom_by_school">Classrooms</label>
+        <select id="list_classroom_by_school" name="choose_school_classroom">
+            <option></option>
+        </select><br><br>
+        <input type="submit" class="button" value="Submit">
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        let list_schools = $('#list_schools');
+        let list_classroom_by_school = $('#list_classroom_by_school');
+
+        $(document).ready(() => {
+            $.ajax({
+                url: "{% url 'authorization:list_schools' %}",
+                type: "GET",
+                success: function (data) {
+                    console.log(data);
+                    for (const element of data) {
+                        list_schools.append('<option value="' + element.id + '">' + element.school_name + '</option>')
+                    }
+                }
+            });
+        })
+
+        list_schools.change(() => {
+            list_classroom_by_school.empty();
+            $.ajax({
+                url: "{% url 'authorization:list_schools' %}",
+                type: "GET",
+                success: function (data) {
+                    for (const schools of data) {
+                        if (Number(schools.id) === Number(list_schools.val())) {
+                            console.log(schools.school_classrooms);
+                            for (const classrooms of schools.school_classrooms) {
+                                list_classroom_by_school.append(
+                                    `<option value="${classrooms.classroom_id}">${classrooms.classroom}</option>`)
+                            }
+                        }
+                    }
+                }
+            });
+        })
+
+    </script>
+{% endblock %}
