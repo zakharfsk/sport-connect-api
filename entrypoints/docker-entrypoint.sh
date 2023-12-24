@@ -12,4 +12,4 @@ python -Xutf8 manage.py loaddata ./fixtures/core.json
 echo "Starting server..."
 gunicorn 'sport_connect_api.wsgi' --bind=0.0.0.0:8000
 
-ENTRYPOINT ["/app/docker-entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoints/docker-entrypoint.sh"]

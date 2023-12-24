@@ -33,4 +33,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-ENTRYPOINT ["/app/docker-entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoints/docker-entrypoint.sh"]
