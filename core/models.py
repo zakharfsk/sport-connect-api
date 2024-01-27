@@ -34,7 +34,9 @@ class SportSchool(BaseModel):
 
 
 class AverageValuesStandards(BaseModel):
-    name_standard = models.CharField(max_length=225, choices=((standard, standard) for standard in settings.LIST_STANDARDS), verbose_name="Показник")
+    name_standard = models.CharField(max_length=225,
+                                     choices=((standard, standard) for standard in settings.LIST_STANDARDS),
+                                     verbose_name="Показник")
     children_age = models.IntegerField(choices=[(i, i) for i in range(10, 12)], verbose_name="Вік дитини", null=True)
     children_gender = models.CharField(max_length=225, choices=[("Юнак", "Юнак"), ("Дівчина", "Дівчина")],
                                        verbose_name="Стать дитини", null=True)
@@ -61,8 +63,3 @@ class WeightingFactors(BaseModel):
         db_table = "weighting_factors"
         verbose_name = "Вагові коефіцієнти (за випробуваннями)"
         verbose_name_plural = "Вагові коефіцієнти (за випробуваннями)"
-
-
-
-# class Exams(models.Model):
-

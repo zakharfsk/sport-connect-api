@@ -18,8 +18,8 @@ from users.models import User
 def get_file_for_student_calculation(request: WSGIRequest):
     if request.method == 'POST':
 
-        list_users = User.objects.filter(user_school=int(request.POST['choose_school']),
-                                         user_classroom=int(request.POST['choose_school_classroom'])).all()
+        list_users = User.objects.filter(user_school=request.POST['choose_school'],
+                                         user_classroom=request.POST['choose_school_classroom']).all()
         school = list_users[0].user_school.school_name
         classroom = list_users[0].user_classroom.representation()
 

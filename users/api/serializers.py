@@ -7,19 +7,32 @@ class RegisterUserSerializer(serializers.ModelSerializer):
     first_name = serializers.CharField(required=True)
     last_name = serializers.CharField(required=True)
     email = serializers.EmailField(required=True)
+    user_school = serializers.PrimaryKeyRelatedField(queryset=Schools.objects.all(), required=True,
+                                                     pk_field=serializers.UUIDField())
+    user_classroom = serializers.PrimaryKeyRelatedField(queryset=SchoolsClassrooms.objects.all(), required=True,
+                                                        pk_field=serializers.UUIDField())
+    user_age = serializers.IntegerField(required=True)
 
     class Meta:
         model = User
         fields = ('first_name',
                   'last_name', 'email',
                   'user_school', 'user_classroom',
-                  'user_gender', 'password')
+                  'user_gender', 'user_age', 'password')
         write_only_fields = ('password',)
 
     def create(self, validated_data):
         validated_data['username'] = validated_data['email']
         user = User.objects.create_user(**validated_data)
         return user
+
+
+class LoginUserSerializer(serializers.ModelSerializer):
+    email = serializers.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ('email', 'password')
 
 
 class SchoolsSerializer(serializers.ModelSerializer):

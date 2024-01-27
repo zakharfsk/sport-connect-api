@@ -14,7 +14,6 @@ from pathlib import Path
 
 from corsheaders.defaults import default_methods, default_headers
 from django.contrib.admin import AdminSite
-from dotenv import load_dotenv, find_dotenv
 from environs import Env
 
 
@@ -28,22 +27,6 @@ https://django-map-widgets.readthedocs.io
 Вибір школи з випадаючого списку
 Вибір класу з випадаючого списку, окремо цифра окремо буква
 """
-
-# env = environ.Env(
-#     DEBUG=bool,
-#     SECRET_KEY=str,
-#     DJANGO_ALLOWED_HOSTS=(list, []),
-#     DJANGO_CORS_ORIGIN_WHITELIST=(list, []),
-#     CORS_ALLOWED_ORIGIN_REGEXES=(list, []),
-#     # Database Settings
-#     DATABASE_NAME=str,
-#     DATABASE_USER=str,
-#     DATABASE_PASSWORD=str,
-#     DATABASE_HOST=str,
-#     DATABASE_PORT=str,
-#     # Redis Settings
-#     REDIS_URL=str
-# )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -66,14 +49,14 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=True)
 
-ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = env('DJANGO_ALLOWED_HOSTS').split(',') if not DEBUG else []
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS') if not DEBUG else ['*']
+CSRF_TRUSTED_ORIGINS = env.list('DJANGO_ALLOWED_HOSTS') if not DEBUG else []
 
 # CORS Settings
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = env('DJANGO_CORS_ORIGIN_WHITELIST').split(',') if not DEBUG else []
-CORS_ALLOWED_ORIGIN_REGEXES = env('CORS_ALLOWED_ORIGIN_REGEXES').split(',') if not DEBUG else []
+CORS_ORIGIN_WHITELIST = env.list('DJANGO_CORS_ORIGIN_WHITELIST') if not DEBUG else []
+CORS_ALLOWED_ORIGIN_REGEXES = env.list('CORS_ALLOWED_ORIGIN_REGEXES') if not DEBUG else []
 
 CORS_ALLOW_HEADERS = default_headers
 CORS_ALLOW_METHODS = default_methods
@@ -116,7 +99,7 @@ ROOT_URLCONF = 'sport_connect_api.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,7 +119,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "channels_redis.core.RedisChannelLayer",
         "CONFIG": {
-            "hosts": [env("REDIS_URL") + "0"],
+            "hosts": [env.str("REDIS_URL") + "0"],
         },
     },
 }
@@ -244,18 +227,18 @@ LIST_TOPICS = [
 ]
 
 LIST_STANDARDS = [
-    "Периметр плеча напруженого, см",
-    "Периметр плеча розслабленого, см",
-    "Ширина рук, см",
-    "Біг 30 м, с",
+    "Зріст, см",
+    "Вагової-ростовий індекс (індекс маси тіла)",
+    "Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)",
+    "Співвідношення розмаху рук до довжини тіла стоячи, см",
+    "Біг 30м, с",
     "Стрибок з місця у довжину, см",
     "Кидок набивного м’яча на дальність (1 кг), м",
-    "Піднімання тулуба в сід за 60с, кількість",
+    "Підіймання тулуба в сід за 60с, кількість",
     "Згинання розгинання рук в упорі лежачи, кількість",
     "Нахил тулуба стоячи (нахили тулуба вперед з положення сидячи), см",
-    "Човниковий біг (4х9 м), с",
+    "Човниковий біг (4х9м), с",
     "Швидкість реакції (ловля палиця, яка має сантиметрові помітки), см",
-    "Стрибки на скакалці за 60 с, кількість",
-    "Ширина плечей, см",
-    "Викрут мірної лінійки, см",
+    "Стрибки на скакалці за 60с, кількість",
+    "Викрут мірної лінійки (різниця від ширини плечей), см"
 ]

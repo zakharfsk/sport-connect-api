@@ -35,7 +35,6 @@
                 url: "{% url 'authorization:list_schools' %}",
                 type: "GET",
                 success: function (data) {
-                    console.log(data);
                     for (const element of data) {
                         list_schools.append('<option value="' + element.id + '">' + element.school_name + '</option>')
                     }
@@ -50,12 +49,15 @@
                 type: "GET",
                 success: function (data) {
                     for (const schools of data) {
-                        if (Number(schools.id) === Number(list_schools.val())) {
+                        if (schools.id === list_schools.val()) {
                             console.log(schools.school_classrooms);
                             for (const classrooms of schools.school_classrooms) {
                                 list_classroom_by_school.append(
                                     `<option value="${classrooms.classroom_id}">${classrooms.classroom}</option>`)
                             }
+                        }
+                        else {
+                            console.log('not found')
                         }
                     }
                 }
