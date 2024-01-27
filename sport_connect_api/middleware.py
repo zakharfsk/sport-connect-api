@@ -1,7 +1,6 @@
 
 
 class TokenMiddleware:
-
     async def __call__(self, scope, receive, send):
         query_string = scope.get("query_string", b"").decode("utf-8")
         query_parameters = {key: value for key, value in (

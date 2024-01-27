@@ -1,7 +1,9 @@
 from django.db import models
 
+from sport_connect_api.models import BaseModel
 
-class Sport(models.Model):
+
+class Sport(BaseModel):
     name = models.CharField(max_length=225)
 
     def __str__(self):
@@ -13,7 +15,7 @@ class Sport(models.Model):
         verbose_name_plural = "Види спорту"
 
 
-class SportSchool(models.Model):
+class SportSchool(BaseModel):
     sport = models.ForeignKey(Sport, on_delete=models.CASCADE, related_name="sport_schools")
     school_name = models.CharField(max_length=350, null=False, blank=False)
     school_site_url = models.URLField(null=False, blank=False)
@@ -30,7 +32,7 @@ class SportSchool(models.Model):
         verbose_name_plural = "Сайти ДЮСШ"
 
 
-class AverageValuesStandards(models.Model):
+class AverageValuesStandards(BaseModel):
     name_standard = models.CharField(max_length=225, verbose_name="Показник")
     children_age = models.IntegerField(choices=[(i, i) for i in range(10, 12)], verbose_name="Вік дитини", null=True)
     children_gender = models.CharField(max_length=225, choices=[("Юнак", "Юнак"), ("Дівчина", "Дівчина")],
@@ -47,7 +49,7 @@ class AverageValuesStandards(models.Model):
         verbose_name_plural = "Середні значення по нормативах"
 
 
-class WeightingFactors(models.Model):
+class WeightingFactors(BaseModel):
     sport = models.ForeignKey(Sport, on_delete=models.CASCADE, related_name="weighting_factors")
     average_value_standard = models.ForeignKey(AverageValuesStandards, on_delete=models.CASCADE,
                                                related_name="weighting_factors")
