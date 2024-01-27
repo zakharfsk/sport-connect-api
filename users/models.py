@@ -1,5 +1,3 @@
-import uuid
-
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
@@ -37,7 +35,7 @@ class User(AbstractUser, BaseModel):
         verbose_name = 'Користувач'
 
 
-class Schools(models.Model):
+class Schools(BaseModel):
     school_name = models.CharField(max_length=256, blank=False, null=False)
     school_city = models.CharField(max_length=256, blank=False, null=False)
 
@@ -52,7 +50,7 @@ class Schools(models.Model):
         verbose_name = 'Школа'
 
 
-class SchoolsClassrooms(models.Model):
+class SchoolsClassrooms(BaseModel):
     school = models.ForeignKey(Schools, on_delete=models.CASCADE)
     class_number = models.IntegerField(blank=False, null=True)
     class_letter = models.CharField(choices=(
