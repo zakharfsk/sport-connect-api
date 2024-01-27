@@ -69,7 +69,7 @@ def calculate_standards_result(file_result: list):
 
 
 def calculate_sports_aptitude(standards_result: list):
-    result_dict = {}
+    result = []
     for sport in Sport.objects.all():
         weight_factors = dict(
             WeightingFactors.objects.filter(sport=sport.pk)
@@ -78,8 +78,10 @@ def calculate_sports_aptitude(standards_result: list):
 
         for st_res in standards_result:
             res = 0
+            result_dict = {"id": st_res["id"]}
             for key, value in st_res.items():
                 if key in weight_factors:
                     res += value * weight_factors[key]
             result_dict[sport.name] = res
-    return result_dict
+            result.append(result_dict)
+    return result
