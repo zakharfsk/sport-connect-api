@@ -15,7 +15,8 @@ from pathlib import Path
 from corsheaders.defaults import default_methods, default_headers
 from django.contrib.admin import AdminSite
 from dotenv import load_dotenv, find_dotenv
-import environ
+from environs import Env
+
 
 """
 Модель Спорт школи
@@ -28,40 +29,42 @@ https://django-map-widgets.readthedocs.io
 Вибір класу з випадаючого списку, окремо цифра окремо буква
 """
 
-env = environ.Env(
-    DEBUG=bool,
-    SECRET_KEY=str,
-    DJANGO_ALLOWED_HOSTS=(list, []),
-    DJANGO_CORS_ORIGIN_WHITELIST=(list, []),
-    CORS_ALLOWED_ORIGIN_REGEXES=(list, []),
-    # Database Settings
-    DATABASE_NAME=str,
-    DATABASE_USER=str,
-    DATABASE_PASSWORD=str,
-    DATABASE_HOST=str,
-    DATABASE_PORT=str,
-    # Redis Settings
-    REDIS_URL=str
-)
+# env = environ.Env(
+#     DEBUG=bool,
+#     SECRET_KEY=str,
+#     DJANGO_ALLOWED_HOSTS=(list, []),
+#     DJANGO_CORS_ORIGIN_WHITELIST=(list, []),
+#     CORS_ALLOWED_ORIGIN_REGEXES=(list, []),
+#     # Database Settings
+#     DATABASE_NAME=str,
+#     DATABASE_USER=str,
+#     DATABASE_PASSWORD=str,
+#     DATABASE_HOST=str,
+#     DATABASE_PORT=str,
+#     # Redis Settings
+#     REDIS_URL=str
+# )
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = Env()
+env.read_env(f'{BASE_DIR / ".env"}')
 
 CALCULATIONS_FILES_FOLDER = os.path.join(BASE_DIR, 'media/calculations')
 
 if not os.path.exists(CALCULATIONS_FILES_FOLDER):
     os.makedirs(CALCULATIONS_FILES_FOLDER)
 
-environ.Env.read_env(BASE_DIR / ".env")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env('DEBUG')
+DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = env('DJANGO_ALLOWED_HOSTS').split(',') if not DEBUG else []
@@ -145,11 +148,11 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_PASSWORD'),
-        'HOST': env('DATABASE_HOST'),
-        'PORT': env('DATABASE_PORT'),
+        'NAME': env.str('DATABASE_NAME'),
+        'USER': env.str('DATABASE_USER'),
+        'PASSWORD': env.str('DATABASE_PASSWORD'),
+        'HOST': env.str('DATABASE_HOST'),
+        'PORT': env.int('DATABASE_PORT')
     }
 }
 
@@ -192,9 +195,9 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # redis://redis:6380/0
-CELERY_BROKER_URL = env("REDIS_URL") + "1"
+CELERY_BROKER_URL = env.str("REDIS_URL") + "1"
 CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3000}
-CELERY_RESULT_BACKEND = env("REDIS_URL") + "1"
+CELERY_RESULT_BACKEND = env.str("REDIS_URL") + "1"
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
