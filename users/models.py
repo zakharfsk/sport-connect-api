@@ -4,13 +4,13 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 from core.models import AverageValuesStandards
+from sport_connect_api.models import BaseModel
 from users.querysets import SchoolQuerySet, SchoolClassesQuerySet
 
 
-class User(AbstractUser):
-    user_id = models.UUIDField(editable=False, default=uuid.uuid4, unique=True)
-    user_school = models.ForeignKey('Schools', on_delete=models.CASCADE, blank=False, null=True)
-    user_classroom = models.ForeignKey('SchoolsClassrooms', on_delete=models.CASCADE, blank=False, null=True)
+class User(AbstractUser, BaseModel):
+    user_school = models.ForeignKey('Schools', on_delete=models.CASCADE, blank=True, null=True)
+    user_classroom = models.ForeignKey('SchoolsClassrooms', on_delete=models.CASCADE, blank=True, null=True)
     user_gender = models.CharField(choices=(
         ('Дівчина', 'Дівчина'),
         ('Юнак', 'Юнак')),
@@ -19,7 +19,7 @@ class User(AbstractUser):
 
     def to_xlsx_format(self):
         return {
-            'id': self.user_id,
+            'id': self.id,
             'Ім\'я': self.first_name,
             'Прізвище': self.last_name,
             'Стать': self.user_gender,

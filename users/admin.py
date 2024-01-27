@@ -11,10 +11,9 @@ class SchoolsClassroomsAdmin(admin.TabularInline):
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('user_id', 'first_name', 'last_name', 'user_school', 'user_classroom', 'user_gender')
+    list_display = ('id', 'first_name', 'last_name', 'user_school', 'user_classroom', 'user_gender')
     list_filter = ('user_school', 'user_gender')
-    readonly_fields = ('user_id',)
-    search_fields = ('user_id', 'user_school')
+    search_fields = ('user_school', )
 
 
 @admin.register(Schools)
