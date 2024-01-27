@@ -13,6 +13,11 @@ class RegisterUserSerializer(serializers.ModelSerializer):
                                                         pk_field=serializers.UUIDField())
     user_age = serializers.IntegerField(required=True)
 
+    def create(self, validated_data):
+        validated_data['username'] = validated_data['email']
+        user = User.objects.create_user(**validated_data)
+        return user
+
     class Meta:
         model = User
         fields = ('first_name',
@@ -21,10 +26,11 @@ class RegisterUserSerializer(serializers.ModelSerializer):
                   'user_gender', 'user_age', 'password')
         write_only_fields = ('password',)
 
-    def create(self, validated_data):
-        validated_data['username'] = validated_data['email']
-        user = User.objects.create_user(**validated_data)
-        return user
+
+class ShowUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        exclude = ('password', 'groups', 'user_permissions', 'is_staff', 'is_superuser',)
 
 
 class LoginUserSerializer(serializers.ModelSerializer):
