@@ -19,12 +19,35 @@
 from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
-from django.db.models import Q
 
 from core.models import AverageValuesStandards, Sport, WeightingFactors
 
 
 def get_data_from_excel(file_path: str) -> list:
+    """
+
+    This method provides functionality to extract data from an Excel file.
+
+    Parameters:
+    - file_path (str): The path to the Excel file from which to extract the data.
+
+    Returns:
+    - list: A list of dictionaries, where each dictionary represents a row of data from the Excel file.
+
+    The method works by loading the Excel file using the `load_workbook` function from the `openpyxl` library. It then retrieves the active worksheet using the `active` attribute of the
+    * workbook. The method iterates over each row of the worksheet starting from the second row (index 2) and builds a dictionary for each row. The keys of the dictionary are taken from
+    * a pre-defined list called `settings.LIST_TOPICS`. The values of the dictionary are extracted from the corresponding cells in the row.
+
+    If a value in a cell is not None, it is added to the dictionary as a key-value pair. If the index of the column is greater than 7, the value is added to a nested dictionary under the
+    * "standards" key. Otherwise, it is added directly to the top-level dictionary.
+
+    After processing all rows in the worksheet, the method calculates two additional values and adds them to the "standards" dictionary. The first calculated value is the "Вагово-ростов
+    *ий індекс (індекс маси тіла), маса (гр), зріст (см)" which is the ratio of the "Зріст, см" to the "Маса, гр". The second calculated value is the "Індекс розвитку мускулатури (перим
+    *етр плеча напруженого/периметр плеча розслабленого)" which is the ratio of the "Периметр плеча напруженого, см" to the "Периметр плеча розслабленого, см".
+
+    Finally, the method deletes the Excel file using the `default_storage.delete` method and returns the list of dictionaries representing the extracted data.
+
+    """
     wb = load_workbook(file_path)
     ws = wb.active
     data = []
@@ -50,6 +73,20 @@ def get_data_from_excel(file_path: str) -> list:
 
 
 def calculate_standards_result(file_result: list):
+    """
+
+    Calculate the standards result based on the given file_result.
+
+    :param file_result: A list of dictionaries representing the file result. Each dictionary contains the following keys:
+        - 'id': The id of the result.
+        - 'standards': A dictionary of user standards as keys and their respective values.
+
+    :return: A list of dictionaries representing the calculated standards result.
+        Each dictionary contains the following keys:
+        - 'id': The id of the result.
+        - User standards as keys and their respective calculated results.
+
+    """
     data = []
     for res in file_result:
         d = {"id": res["id"]}
@@ -69,6 +106,38 @@ def calculate_standards_result(file_result: list):
 
 
 def calculate_sports_aptitude(standards_result: list):
+    """
+    Calculate the sports aptitude for each standard result.
+
+    Parameters:
+    - standards_result: A list of dictionaries containing the results for each standard. Each dictionary should have the following keys:
+      - "id": The ID of the standard result.
+      - Any other key-value pairs representing the results of individual standards.
+
+    Returns:
+    - A list of dictionaries containing the calculated sports aptitude for each standard result. Each dictionary will have the following keys:
+      - "id": The ID of the standard result.
+      - Any other key-value pairs representing the calculated sports aptitude for each sport.
+
+    Example Usage:
+    standards_result = [
+      {"id": 1, "running": 10, "jumping": 8, "throwing": 7},
+      {"id": 2, "running": 9, "jumping": 6, "throwing": 8},
+      {"id": 3, "running": 7, "jumping": 9, "throwing": 6},
+    ]
+    aptitude_results = calculate_sports_aptitude(standards_result)
+    print(aptitude_results)
+    # Output: [{"id": 1, "football": 70, "tennis": 65, "swimming": 68},
+    #          {"id": 2, "football": 64, "tennis": 63, "swimming": 62},
+    #          {"id": 3, "football": 65, "tennis": 66, "swimming": 61}]
+
+    Note:
+    - This method assumes that there is a Sport model and a WeightingFactors model in the system.
+    - The Sport model should have a "name" field representing the name of the sport.
+    - The WeightingFactors model should have foreign keys to the Sport model and the AverageValueStandard model.
+    - The AverageValueStandard model should have a "name_standard" field representing the name of the standard.
+    - The WeightingFactors model also should have a "weighting_factor" field representing the factor to be used for calculating the sports aptitude.
+    """
     result = []
     for sport in Sport.objects.all():
         weight_factors = dict(
