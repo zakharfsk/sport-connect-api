@@ -22,10 +22,15 @@ docker compose up --build
 
 ## What Docker Includes
 - API Server (http://localhost:8000)
+- API Admin Panel (http://localhost:8000/admin)
 - Flower For Celery (http://localhost:5555)
 - Redis (http://localhost:6379)
 - PostgreSQL (http://localhost:5432)
 - Nginx (http://localhost:80)
+
+Admin Panel Credentials:
+- Username: root
+- Password: root
 
 ## Stopping the Project
 When you're done working, you can stop your containers with this command:
