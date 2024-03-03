@@ -91,33 +91,33 @@ services:
     volumes:
       - redis_data:/var/lib/redis
 
-#  nginx:
-#    container_name: nginx-api
-#    image: nginx:latest
-#    restart: always
-#    ports:
-#      - "80:80"
-#      - "443:443"
-#    volumes:
-#      - ./nginx-conf.d:/etc/nginx/conf.d
-#      - .:/app
-#      - static:/app/static
-#      - media:/app/media
-#      - ./certbot/conf:/etc/letsencrypt
-#      - ./certbot/www:/var/www/certbot
-#    depends_on:
-#      server:
-#        condition: service_started
-#
-#  certbot:
-#    container_name: certbot-api
-#    image: certbot/certbot
-#    depends_on:
-#      - nginx
-#    volumes:
-#      - ./nginx-conf.d:/etc/nginx/conf.d
-#      - ./certbot/conf:/etc/letsencrypt
-#      - ./certbot/www:/var/www/certbot
+  nginx:
+    container_name: nginx-api
+    image: nginx:latest
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-conf.d:/etc/nginx/conf.d
+      - .:/app
+      - static:/app/static
+      - media:/app/media
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    depends_on:
+      server:
+        condition: service_started
+
+  certbot:
+    container_name: certbot-api
+    image: certbot/certbot
+    depends_on:
+      - nginx
+    volumes:
+      - ./nginx-conf.d:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
 
 volumes:
   static:
