@@ -34,9 +34,5 @@ EXPOSE 8000
 
 RUN chmod ugo+rwx /app
 
-RUN #chmod a+x /app/entrypoints/docker-entrypoint.sh
-RUN #chmod a+x /app/entrypoints/celery-flower-entrypoint.sh
-RUN #chmod a+x /app/entrypoints/celery-worker-entrypoint.sh
-
 # Run the application.
-ENTRYPOINT ["/app/entrypoints/docker-entrypoint.sh"]
+ENTRYPOINT ["bash", "-e", "/app/entrypoints/docker-entrypoint.sh"]
