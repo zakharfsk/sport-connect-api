@@ -32,5 +32,9 @@ COPY . .
 # Expose the port that the application listens on.
 EXPOSE 8000
 
+RUN chmod a+x /app/entrypoints/docker-entrypoint.sh
+RUN chmod a+x /app/entrypoints/celery-flower-entrypoint.sh
+RUN chmod a+x /app/entrypoints/celery-worker-entrypoint.sh
+
 # Run the application.
 ENTRYPOINT ["/app/entrypoints/docker-entrypoint.sh"]
