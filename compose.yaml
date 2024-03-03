@@ -3,8 +3,7 @@ services:
   server:
     container_name: sport-connect-api
     restart: always
-    build:
-      context: .
+    build: .
     environment:
       DATABASE_HOST: "postgres"
       DJANGO_SUPERUSER_PASSWORD: "root"
@@ -26,8 +25,7 @@ services:
     container_name: celery-worker
     image: celery:latest
     restart: always
-    build:
-      context: .
+    build: .
     entrypoint: /app/entrypoints/celery-worker-entrypoint.sh
     environment:
       DATABASE_HOST: "sport-connect-api-postgres"
@@ -49,8 +47,7 @@ services:
   flower:
     container_name: sport-connect-api-flower
     restart: always
-    build:
-      context: .
+    build: .
     entrypoint: /app/entrypoints/celery-flower-entrypoint.sh
     environment:
       DATABASE_HOST: "sport-connect-api-postgres"
