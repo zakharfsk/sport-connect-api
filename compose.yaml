@@ -95,7 +95,7 @@ services:
       - redis_data:/var/lib/redis
 
   nginx:
-    container_name: nginx
+    container_name: nginx-api
     image: nginx:latest
     restart: always
     ports:
@@ -113,7 +113,7 @@ services:
         condition: service_started
 
   certbot:
-    container_name: certbot
+    container_name: certbot-api
     image: certbot/certbot
     depends_on:
       - nginx
