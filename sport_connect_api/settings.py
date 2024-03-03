@@ -49,7 +49,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS') if not DEBUG else ['*']
-CSRF_TRUSTED_ORIGINS = env.list('DJANGO_ALLOWED_HOSTS') if not DEBUG else []
+CSRF_TRUSTED_ORIGINS = ['https://' + domain for domain in env.list('DJANGO_ALLOWED_HOSTS')] if not DEBUG else []
 
 # CORS Settings
 CORS_ALLOW_CREDENTIALS = True
