@@ -32,7 +32,7 @@ COPY . .
 # Expose the port that the application listens on.
 EXPOSE 8000
 
-RUN chmod ugo+rwx app/
+RUN chmod ugo+rwx /app
 
 RUN #chmod a+x /app/entrypoints/docker-entrypoint.sh
 RUN #chmod a+x /app/entrypoints/celery-flower-entrypoint.sh
