@@ -42,6 +42,7 @@ class AverageValuesStandards(BaseModel):
                                        verbose_name="Стать дитини", null=True)
     average_value = models.FloatField(verbose_name="Середнє значення", null=True)
     sigma = models.FloatField(verbose_name="Сигма")
+    # average_range = models.(verbose_name="Діапазон середнього значення", null=True)
 
     def __str__(self):
         return self.name_standard
