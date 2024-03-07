@@ -17,4 +17,4 @@ python -Xutf8 ./sport_connect_api/manage.py loaddata ./fixtures/core.json &&
 
 echo "Starting server..."
 #gunicorn 'sport_connect_api.wsgi' --reload --bind=0.0.0.0:8000
-python manage.py runserver 0.0.0.0:8000
+python ./sport_connect_api/manage.py runserver 0.0.0.0:8000
