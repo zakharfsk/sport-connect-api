@@ -3,6 +3,8 @@
 set -o errexit
 set -o nounset
 
+cd /app
+
 echo "Migrate collect static..."
 python manage.py collectstatic --noinput &&
 
