@@ -32,7 +32,7 @@ RUN apt-get update \
 # Leverage a bind mount to requirements.txt to avoid having to copy them into
 # into this layer.
 
-COPY ./requirements.txt .
+COPY ../requirements.txt .
 RUN --mount=type=cache,target=/root/.cache/pip \
     --mount=type=bind,source=requirements.txt,target=requirements.txt \
     python -m pip install -r requirements.txt
@@ -40,24 +40,24 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 # Expose the port that the application listens on.
 EXPOSE 8000
 
-COPY ./entrypoints/entrypoint.sh /entrypoint
+COPY ../entrypoints/prod/entrypoint.sh /entrypoint
 RUN sed -i 's/\r$//g' /entrypoint
 RUN chmod +x /entrypoint
 
-COPY ./entrypoints/django-entrypoint.sh /django
+COPY ../entrypoints/prod/django-entrypoint.sh /django
 RUN sed -i 's/\r$//g' /django
 RUN chmod +x /django
 
-COPY ./entrypoints/celery-worker-entrypoint.sh /start-celeryworker
+COPY ../entrypoints/prod/celery-worker-entrypoint.sh /start-celeryworker
 RUN sed -i 's/\r$//g' /start-celeryworker
 RUN chmod +x /start-celeryworker
 
-COPY ./entrypoints/celery-flower-entrypoint.sh /start-flower
+COPY ../entrypoints/prod/celery-flower-entrypoint.sh /start-flower
 RUN sed -i 's/\r$//g' /start-flower
 RUN chmod +x /start-flower
 
 
-COPY . .
+COPY .. .
 
 # Run the application.
 ENTRYPOINT ["/entrypoint"]

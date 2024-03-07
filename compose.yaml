@@ -5,7 +5,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/Dockerfile
     command: /django
     environment:
       DATABASE_HOST: "postgres"
@@ -28,7 +28,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/Dockerfile
     command: /start-celeryworker
     environment:
       DATABASE_HOST: "postgres"
@@ -46,7 +46,7 @@ services:
   flower:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/Dockerfile
     command: /start-flower
     volumes:
       - .:/app
@@ -96,16 +96,6 @@ services:
       - ./certbot/www:/var/www/certbot
     depends_on:
       - server
-
-  certbot:
-    container_name: certbot-api
-    image: certbot/certbot
-    depends_on:
-      - nginx
-    volumes:
-      - ./nginx-conf.d:/etc/nginx/conf.d
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
 
 volumes:
   static:

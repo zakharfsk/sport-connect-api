@@ -5,7 +5,7 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/DockerfileProd
     command: /django
     environment:
       DATABASE_HOST: "postgres"
@@ -20,15 +20,15 @@ services:
       - ".env"
     ports:
       - "8000:8000"
-    networks:
-      - backend
+    depends_on:
+      - database
 
   celery_worker:
     container_name: celery-worker
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/DockerfileProd
     command: /start-celeryworker
     environment:
       DATABASE_HOST: "postgres"
@@ -46,7 +46,7 @@ services:
   flower:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: dockerfiles/DockerfileProd
     command: /start-flower
     volumes:
       - .:/app
@@ -56,6 +56,7 @@ services:
       - "5557:5555"
     depends_on:
       - redis
+      - database
 
   redis:
     image: redis:latest
@@ -66,8 +67,32 @@ services:
     volumes:
       - redis_data:/var/lib/redis
 
-networks:
-  backend:
+  nginx:
+    container_name: nginx-api
+    image: nginx:latest
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/app
+      - static:/app/static
+      - media:/app/media
+      - ./nginx-conf.d:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    depends_on:
+      - server
+
+  certbot:
+    container_name: certbot-api
+    image: certbot/certbot
+    depends_on:
+      - nginx
+    volumes:
+      - ./nginx-conf.d:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
 
 volumes:
   static:
