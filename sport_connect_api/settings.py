@@ -43,7 +43,7 @@ if not os.path.exists(CALCULATIONS_FILES_FOLDER):
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = env.str('SECRET_KEY', default='django-insecure-2r7!l!j9@h7!t2l1j0@#1y!+!w@^7mz^_6b@z!@z5m0&^z!@^a')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=True)
@@ -54,8 +54,6 @@ CSRF_TRUSTED_ORIGINS = ['https://' + domain for domain in env.list('DJANGO_ALLOW
 # CORS Settings
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = env.list('DJANGO_CORS_ORIGIN_WHITELIST')
-CORS_ALLOWED_ORIGIN_REGEXES = env.list('CORS_ALLOWED_ORIGIN_REGEXES')
 
 CORS_ALLOW_HEADERS = default_headers
 CORS_ALLOW_METHODS = default_methods
