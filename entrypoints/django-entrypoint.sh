@@ -5,6 +5,10 @@ set -o nounset
 
 ls -l
 
+if [ "${IS_SERVER}" == "True" ]; then
+  cd sport-connect-api
+fi
+
 echo "Migrate collect static..."
 python manage.py collectstatic --noinput &&
 
