@@ -7,23 +7,24 @@ set -o pipefail
 # exits if any of your variables is not set
 set -o nounset
 
+if [ "${IS_SERVER}" == "False" ]; then
 postgres_ready() {
 python << END
-import sys
+  import sys
 
-import psycopg2
+  import psycopg2
 
-try:
-    psycopg2.connect(
-        dbname="${DATABASE_NAME}",
-        user="${DATABASE_USER}",
-        password="${DATABASE_PASSWORD}",
-        host="${DATABASE_HOST}",
-        port="${DATABASE_PORT}",
-    )
-except psycopg2.OperationalError:
-    sys.exit(-1)
-sys.exit(0)
+  try:
+      psycopg2.connect(
+          dbname="${DATABASE_NAME}",
+          user="${DATABASE_USER}",
+          password="${DATABASE_PASSWORD}",
+          host="${DATABASE_HOST}",
+          port="${DATABASE_PORT}",
+      )
+  except psycopg2.OperationalError:
+      sys.exit(-1)
+  sys.exit(0)
 END
 }
 until postgres_ready; do
@@ -31,5 +32,6 @@ until postgres_ready; do
   sleep 1
 done
 >&2 echo 'PostgreSQL is available'
+fi
 
 exec "$@"
