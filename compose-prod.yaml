@@ -56,7 +56,6 @@ services:
       - "5557:5555"
     depends_on:
       - redis
-      - database
 
   redis:
     image: redis:latest
