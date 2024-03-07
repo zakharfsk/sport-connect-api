@@ -1,5 +1,8 @@
 #!/bin/sh
 
+set -o errexit
+set -o nounset
+
 echo "Migrate collect static..."
 python manage.py collectstatic --noinput &&
 
