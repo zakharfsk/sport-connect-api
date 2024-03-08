@@ -13,6 +13,9 @@ template_calculate.xlsx
 **/static
 **/media
 __pycache__
+rabbitmq/
+*.db
+certbot
 
 **/.DS_Store
 **/__pycache__

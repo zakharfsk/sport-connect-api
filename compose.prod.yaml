@@ -39,9 +39,10 @@ services:
       - flower_data:/var/lib/flower
     depends_on:
       - server
-      - redis
+      - rabbitmq
 
   flower:
+    container_name: flower
     build:
       context: .
       dockerfile: dockerfiles/DockerfileProd
@@ -49,20 +50,22 @@ services:
     volumes:
       - .:/app
     env_file:
-      - '.env'
+      - ".env"
     ports:
       - "5557:5555"
     depends_on:
-      - redis
+      - rabbitmq
+      - database
 
-  redis:
-    image: redis:latest
-    container_name: redis
+  rabbitmq:
+    image: rabbitmq:3.13.0-management
+    container_name: rabbitmq
     restart: always
-    ports:
-      - "6379:6379"
     volumes:
-      - redis_data:/var/lib/redis
+      - ./rabbitmq:/var/lib/rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
 
   nginx:
     container_name: nginx-api
@@ -80,16 +83,6 @@ services:
       - ./certbot/www:/var/www/certbot
     depends_on:
       - server
-
-  certbot:
-    container_name: certbot-api
-    image: certbot/certbot
-    depends_on:
-      - nginx
-    volumes:
-      - ./nginx-conf.d:/etc/nginx/conf.d
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
 
 volumes:
   static:

@@ -113,14 +113,14 @@ TEMPLATES = [
 WSGI_APPLICATION = 'sport_connect_api.wsgi.application'
 ASGI_APPLICATION = "sport_connect_api.asgi.application"
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [env.str("REDIS_URL") + "0"],
-        },
-    },
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [env.str("REDIS_URL") + "0"],
+#         },
+#     },
+# }
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -183,9 +183,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # redis://redis:6380/0
-CELERY_BROKER_URL = env.str("REDIS_URL") + "1"
+CELERY_BROKER_URL = env.str("RABBMITMQ_URL")
 CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3000}
-CELERY_RESULT_BACKEND = env.str("REDIS_URL") + "1"
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
