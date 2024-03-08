@@ -22,3 +22,8 @@ class AverageValuesStandardsAdmin(admin.ModelAdmin):
 @admin.register(models.WeightingFactors)
 class WeightingFactorsAdmin(admin.ModelAdmin):
     list_display = ('sport', 'average_value_standard', 'weighting_factor')
+
+
+@admin.register(models.UserResult)
+class UserResultAdmin(admin.ModelAdmin):
+    list_display = ('user', 'result', 'date_created', 'date_updated')
