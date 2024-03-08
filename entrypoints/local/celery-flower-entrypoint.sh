@@ -13,6 +13,12 @@ until worker_ready; do
 done
 >&2 echo 'Celery workers is available'
 
-celery -A sport_connect_api.celery  \
-    --broker="${REDIS_URL}0" \
-    flower
+celery \
+  --broker=amqp://guest:guest@rabbitmq:5672/ \
+  flower \
+  --broker_api=http://guest:guest@rabbitmq:15672/api/ \
+  --debug \
+  --persistent=True \
+  --db=./flower.db \
+  --state_save_interval=10000 \
+  purge_offline_workers=10s\
