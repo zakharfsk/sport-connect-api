@@ -6,6 +6,9 @@ data
 static
 .gitignore
 nginx-conf.d/localhost.conf
+rabbitmq/
+*.db
+certbot
 
 ### Django ###
 *.log
