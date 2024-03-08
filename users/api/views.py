@@ -3,7 +3,6 @@ from rest_framework.decorators import action
 from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import authenticate, login
 
@@ -59,6 +58,12 @@ class UserModelViewSet(viewsets.ViewSet):
     def me(self, request):
         serializer = ShowUserSerializer(request.user)
         return Response(serializer.data)
+
+    @me.mapping.delete
+    def delete_me(self, request):
+        user = request.user
+        user.delete()
+        return Response(status=204)
 
 
 class ListAvailableSchoolsView(generics.ListAPIView):
