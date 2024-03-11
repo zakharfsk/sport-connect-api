@@ -55,7 +55,6 @@ services:
       - "5557:5555"
     depends_on:
       - rabbitmq
-      - database
 
   rabbitmq:
     image: rabbitmq:3.13.0-management

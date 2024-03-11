@@ -345,3 +345,8 @@ LOGGING = {
         },
     }
 }
+
+for handler_name, handler_config in LOGGING['handlers'].items():
+    log_dir = os.path.dirname(handler_config['filename'])
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
