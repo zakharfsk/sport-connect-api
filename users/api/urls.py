@@ -15,5 +15,5 @@ urlpatterns = [
     path('auth/login/', views.LoginUserView.as_view(), name='login'),
     path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('schools/', views.ListAvailableSchoolsView.as_view(), name='list_schools'),
-    path('', include(router.urls))
+    path('', include(router.urls, namespace='users'))
 ]
