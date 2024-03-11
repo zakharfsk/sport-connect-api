@@ -49,8 +49,26 @@ def add_users_to_worksheet(worksheet: Worksheet, list_users: list[User]) -> None
 
 
 def _get_worksheet(workbook) -> Worksheet:
+    """
+    Creates a new worksheet and adds it to the given workbook.
+
+    Parameters:
+    workbook (Workbook): The workbook object to which the new worksheet will be added.
+
+    Returns:
+    Worksheet: The newly created worksheet.
+    """
     return workbook.add_worksheet('Sheet')
 
 
 def _get_workbook(file_path: str) -> Workbook:
+    """
+    Create a new workbook using the given file path.
+
+    :param file_path: The file path where the workbook will be saved.
+    :type file_path: str
+
+    :return: The created workbook.
+    :rtype: Workbook
+    """
     return xlsxwriter.Workbook(file_path)

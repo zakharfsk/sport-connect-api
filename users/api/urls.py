@@ -11,9 +11,9 @@ router = DefaultRouter()
 router.register('users', views.UserModelViewSet, basename='users')
 
 urlpatterns = [
-    path('register/', views.RegisterUserView.as_view(), name='register'),
-    path('list/schools/', views.ListAvailableSchoolsView.as_view(), name='list_schools'),
-    path('login/', views.LoginUserView.as_view(), name='login'),
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('auth/register/', views.RegisterUserView.as_view(), name='register'),
+    path('auth/login/', views.LoginUserView.as_view(), name='login'),
+    path('auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('schools/', views.ListAvailableSchoolsView.as_view(), name='list_schools'),
     path('', include(router.urls))
 ]

@@ -39,9 +39,6 @@ CALCULATIONS_FILES_FOLDER = os.path.join(BASE_DIR, 'media/calculations')
 if not os.path.exists(CALCULATIONS_FILES_FOLDER):
     os.makedirs(CALCULATIONS_FILES_FOLDER)
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env.str('SECRET_KEY', default='django-insecure-2r7!l!j9@h7!t2l1j0@#1y!+!w@^7mz^_6b@z!@z5m0&^z!@^a')
 
@@ -59,8 +56,13 @@ CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_HEADERS = default_headers
 CORS_ALLOW_METHODS = default_methods
 
-# Application definition
+# Pusher credentials
+PUSHER_APP_ID = env.str('PUSHER_APP_ID')
+PUSHER_KEY = env.str('PUSHER_KEY')
+PUSHER_SECRET = env.str('PUSHER_SECRET')
+PUSHER_CLUSTER = env.str('PUSHER_CLUSTER')
 
+# Application definition
 INSTALLED_APPS = [
     # asgi
     "channels",
@@ -115,15 +117,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sport_connect_api.wsgi.application'
 ASGI_APPLICATION = "sport_connect_api.asgi.application"
-
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
-#         "CONFIG": {
-#             "hosts": [env.str("REDIS_URL") + "0"],
-#         },
-#     },
-# }
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
