@@ -5,6 +5,7 @@ attrs==23.1.0
 autobahn==23.6.2
 Automat==22.10.0
 billiard==4.2.0
+bleach==6.1.0
 celery==5.3.6
 cffi==1.16.0
 channels==4.0.0
@@ -27,6 +28,7 @@ django-filter==23.5
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 drf-yasg==1.21.7
+drf_api_logger==1.1.15
 environs==10.3.0
 et-xmlfile==1.1.0
 flower==2.0.0
@@ -76,6 +78,7 @@ tzdata==2023.3
 uritemplate==4.1.1
 vine==5.1.0
 wcwidth==0.2.12
+webencodings==0.5.1
 XlsxWriter==3.1.9
 zope.event==5.0
 zope.interface==6.1

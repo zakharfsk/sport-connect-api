@@ -16,16 +16,19 @@
   }
 ]
 """
+import logging
+
 from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
 
 from core.models import AverageValuesStandards, Sport, WeightingFactors
 
+logger = logging.getLogger(__name__)
+
 
 def get_data_from_excel(file_path: str) -> list:
     """
-
     This method provides functionality to extract data from an Excel file.
 
     Parameters:
@@ -62,10 +65,12 @@ def get_data_from_excel(file_path: str) -> list:
                     d["standards"][key] = val
                 else:
                     d[key] = val
-        d["standards"]["Вагово-ростовий індекс (індекс маси тіла), маса (гр), зріст (см)"] = d["standards"]['Зріст, см'] / \
-            d["standards"]['Маса, гр']
-        d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = d["standards"]['Периметр плеча напруженого, см'] /\
-            d["standards"]['Периметр плеча розслабленого, см']
+        d["standards"][
+            "Вагово-ростовий індекс (індекс маси тіла)"
+        ] = d["standards"]['Зріст, см'] / d["standards"]['Маса, гр']
+
+        d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = \
+            d["standards"]['Периметр плеча напруженого, см'] / d["standards"]['Периметр плеча розслабленого, см']
         data.append(d)
     default_storage.delete(file_path)
 
@@ -74,7 +79,6 @@ def get_data_from_excel(file_path: str) -> list:
 
 def calculate_standards_result(file_result: list):
     """
-
     Calculate the standards result based on the given file_result.
 
     :param file_result: A list of dictionaries representing the file result. Each dictionary contains the following keys:
@@ -100,7 +104,7 @@ def calculate_standards_result(file_result: list):
                 result = 50 + 10 * ((value - average.average_value) / average.sigma)
                 d[user_standards] = result
             except AverageValuesStandards.DoesNotExist:
-                continue
+                logger.warning(f"calculate_standards_result {user_standards} not found")
         data.append(d)
     return data
 

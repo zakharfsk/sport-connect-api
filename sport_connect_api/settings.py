@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
-from datetime import timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from corsheaders.defaults import default_methods, default_headers
@@ -75,6 +75,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'corsheaders',
     'rest_framework_simplejwt',
+    'drf_api_logger',
     # Local Apps
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
@@ -90,6 +91,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'sport_connect_api.middleware.JWTAuthMiddleware',
+    'drf_api_logger.middleware.api_logger_middleware.APILoggerMiddleware'
 ]
 
 ROOT_URLCONF = 'sport_connect_api.urls'
@@ -143,7 +145,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -195,6 +196,8 @@ CELERY_RESULT_SERIALIZER = 'json'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+DRF_API_LOGGER_DATABASE = True
 
 # REST Framework Settings
 REST_FRAMEWORK = {
@@ -259,7 +262,7 @@ LIST_TOPICS = [
     "Периметр плеча напруженого, см",
     "Периметр плеча розслабленого, см",
     "Ширина рук, см",
-    "Біг 30 м, с",
+    "Біг 30м, с",
     "Стрибок з місця у довжину, см",
     "Кидок набивного м’яча на дальність (1 кг), м",
     "Піднімання тулуба в сід за 60с, кількість",
@@ -274,7 +277,7 @@ LIST_TOPICS = [
 
 LIST_STANDARDS = [
     "Зріст, см",
-    "Вагової-ростовий індекс (індекс маси тіла)",
+    "Вагово-ростовий індекс (індекс маси тіла)",
     "Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)",
     "Співвідношення розмаху рук до довжини тіла стоячи, см",
     "Біг 30м, с",
@@ -288,3 +291,57 @@ LIST_STANDARDS = [
     "Стрибки на скакалці за 60с, кількість",
     "Викрут мірної лінійки (різниця від ширини плечей), см"
 ]
+
+LOGS_PATH = [
+    'core/logs',
+    'users/logs',
+]
+
+for i in LOGS_PATH:
+    if not os.path.exists(BASE_DIR / i):
+        os.makedirs(BASE_DIR / i)
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'file': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{'
+        },
+        'reports': {
+            'format': "{asctime} {levelname} {funcName} {filename}:{lineno} - {message}",
+            'style': '{'
+        }
+    },
+    'handlers': {
+        'core': {
+            'level': 'INFO',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'formatter': 'file',
+            'filename': 'core/logs/log_{}.log'.format(str(datetime.now().date())),
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 14,
+        },
+        'users': {
+            'level': 'INFO',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'formatter': 'file',
+            'filename': 'users/logs/log_{}.log'.format(str(datetime.now().date())),
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 14,
+        }
+    },
+    'loggers': {
+        'core': {
+            'level': 'INFO',
+            'handlers': ['core']
+        },
+        'users': {
+            'level': 'INFO',
+            'handlers': ['users']
+        },
+    }
+}
