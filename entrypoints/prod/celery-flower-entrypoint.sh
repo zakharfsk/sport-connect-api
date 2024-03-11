@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 
 worker_ready() {
-    celery -A sport_connect_api.celery inspect ping
+  (cd ./sport_connect_api && celery -A sport_connect_api.celery inspect ping)
 }
 
 until worker_ready; do
@@ -13,12 +13,13 @@ until worker_ready; do
 done
 >&2 echo 'Celery workers is available'
 
-celery \
-  --broker=amqp://guest:guest@rabbitmq:5672/ \
+(cd ./sport_connect_api && celery \
+  --broker="${RABBMITMQ_URL}" \
   flower \
-  --broker_api=http://guest:guest@rabbitmq:15672/api/ \
+  --broker_api="${RABBMITMQ_API}" \
   --debug \
   --persistent=True \
   --db=./flower.db \
   --state_save_interval=10000 \
   purge_offline_workers=10s
+)
