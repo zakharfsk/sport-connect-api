@@ -7,11 +7,14 @@ class RegisterUserSerializer(serializers.ModelSerializer):
     first_name = serializers.CharField(required=True)
     last_name = serializers.CharField(required=True)
     email = serializers.EmailField(required=True)
-    user_school = serializers.PrimaryKeyRelatedField(queryset=Schools.objects.all(), required=True,
-                                                     pk_field=serializers.UUIDField())
-    user_classroom = serializers.PrimaryKeyRelatedField(queryset=SchoolsClassrooms.objects.all(), required=True,
-                                                        pk_field=serializers.UUIDField())
-    user_age = serializers.IntegerField(required=True)
+    user_school = serializers.PrimaryKeyRelatedField(queryset=Schools.objects.all(),
+                                                     pk_field=serializers.UUIDField(),
+                                                     required=True)
+    user_classroom = serializers.PrimaryKeyRelatedField(queryset=SchoolsClassrooms.objects.all(),
+                                                        pk_field=serializers.UUIDField(),
+                                                        required=True)
+    user_age = serializers.ChoiceField(choices=((10, 10), (11, 11)), required=True)
+    user_gender = serializers.ChoiceField(choices=(('Дівчина', 'Дівчина'), ('Юнак', 'Юнак')), required=True)
 
     def create(self, validated_data):
         validated_data['username'] = validated_data['email']
