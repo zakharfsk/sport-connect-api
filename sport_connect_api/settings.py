@@ -50,6 +50,7 @@ DEBUG = env.bool('DEBUG', default=True)
 
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
 CSRF_TRUSTED_ORIGINS = ['https://' + domain for domain in env.list('DJANGO_ALLOWED_HOSTS')]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # CORS Settings
 CORS_ALLOW_CREDENTIALS = True
