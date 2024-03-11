@@ -75,6 +75,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'corsheaders',
     'rest_framework_simplejwt',
+    'drf_api_logger',
     # Local Apps
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
@@ -90,6 +91,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'sport_connect_api.middleware.JWTAuthMiddleware',
+    'drf_api_logger.middleware.api_logger_middleware.APILoggerMiddleware'
 ]
 
 ROOT_URLCONF = 'sport_connect_api.urls'
@@ -143,7 +145,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -195,6 +196,8 @@ CELERY_RESULT_SERIALIZER = 'json'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
+
+DRF_API_LOGGER_DATABASE = True
 
 # REST Framework Settings
 REST_FRAMEWORK = {
