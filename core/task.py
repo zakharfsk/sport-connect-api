@@ -1,3 +1,5 @@
+from rest_framework.reverse import reverse_lazy
+
 from core.models import UserResult
 from sport_connect_api.celery import app
 from core.services.calculate_result import calculation
@@ -15,7 +17,10 @@ def calculate_formula_results(file_path: str):
         trigger_event(
             result['id'],
             'results-calculated',
-            {'message': 'Results calculated successfully'}
+            {
+                'message': 'Results calculated successfully',
+                'url': str(reverse_lazy('core_api:last_user_result'))
+            }
         )
 
     return results
