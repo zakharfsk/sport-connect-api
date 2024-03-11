@@ -1,3 +1,5 @@
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
 from rest_framework import generics, viewsets
 from rest_framework.decorators import action
 from rest_framework.generics import get_object_or_404
@@ -51,10 +53,10 @@ class LoginUserView(generics.CreateAPIView):
 
 
 class UserModelViewSet(viewsets.ViewSet):
-    serializer_class = ShowUserSerializer
     permission_classes = [IsAuthenticated]
 
     @action(detail=False, methods=['get'])
+    @swagger_auto_schema(responses={200: openapi.Response('User info', ShowUserSerializer)})
     def me(self, request):
         serializer = ShowUserSerializer(request.user)
         return Response(serializer.data)
