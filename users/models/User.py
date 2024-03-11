@@ -12,8 +12,8 @@ class User(AbstractUser, BaseModel):
     user_gender = models.CharField(choices=(
         ('Дівчина', 'Дівчина'),
         ('Юнак', 'Юнак')),
-        max_length=256, blank=False, null=False)
-    user_age = models.IntegerField(choices=((10, 10), (11, 11)), blank=False, null=True)
+        max_length=256, blank=True, null=True)
+    user_age = models.IntegerField(choices=((10, 10), (11, 11)), blank=True, null=True)
 
     def to_xlsx_format(self):
         return {
