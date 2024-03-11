@@ -25,9 +25,11 @@ from sport_connect_api.docs_settings import schema_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', lambda request: redirect('schema-swagger-ui', permanent=True)),
-    path('api/v1/authorization/', include('users.api.urls', namespace='authorization')),
+    path('api/v1/', include([
+        path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+        path('', include('users.api.urls', namespace='authorization'))
+    ])),
     path('calculations/', include('core.urls', namespace='core')),
-    path('api/v1/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui')
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
