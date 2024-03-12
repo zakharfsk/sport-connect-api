@@ -33,7 +33,7 @@
     "model": "core.averagevaluesstandards",
     "pk": "00000000-0000-0000-0000-000000000002",
     "fields": {
-        "name_standard": "Вагової-ростовий індекс (індекс маси тіла)",
+        "name_standard": "Ваго-ростовий індекс (індекс маси тіла)",
         "children_age": 10,
         "children_gender": "Юнак",
         "average_value": 219.0,
