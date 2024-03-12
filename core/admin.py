@@ -12,11 +12,17 @@ class SportAdmin(admin.ModelAdmin):
 class SportSchoolAdmin(admin.ModelAdmin):
     list_display = ('sport', 'school_name', 'school_sport_address',
                     'school_sport_email')
+    list_filter = ('sport',)
 
 
 @admin.register(models.AverageValuesStandards)
 class AverageValuesStandardsAdmin(admin.ModelAdmin):
-    list_display = ('name_standard', 'children_age', 'sigma')
+    list_display = ('name_standard', 'children_age', 'children_gender', 'sigma')
+    list_filter = (
+        'name_standard',
+        'children_age',
+        'children_gender',
+    )
 
 
 @admin.register(models.WeightingFactors)
