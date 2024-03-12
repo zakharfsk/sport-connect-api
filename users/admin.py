@@ -3,12 +3,6 @@ from django.contrib import admin
 from .models import User, Schools, SchoolsClassrooms
 
 
-class SchoolsClassroomsAdmin(admin.TabularInline):
-    model = SchoolsClassrooms
-    extra = 0
-    fields = ('class_number', 'class_letter')
-
-
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = (
@@ -73,6 +67,12 @@ class UserAdmin(admin.ModelAdmin):
         ),
         ("Important dates", {"fields": ("last_login", "date_joined")}),
     )
+
+
+class SchoolsClassroomsAdmin(admin.TabularInline):
+    model = SchoolsClassrooms
+    extra = 0
+    fields = ('class_number', 'class_letter')
 
 
 @admin.register(Schools)
