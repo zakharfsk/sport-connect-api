@@ -1,6 +1,8 @@
 from rest_framework import serializers
 
-from users.models import User, Schools, SchoolsClassrooms
+from users.models import Schools, SchoolsClassrooms, User
+
+__all__ = ('RegisterUserSerializer',)
 
 
 class RegisterUserSerializer(serializers.ModelSerializer):
@@ -28,28 +30,3 @@ class RegisterUserSerializer(serializers.ModelSerializer):
                   'user_school', 'user_classroom',
                   'user_gender', 'user_age', 'password')
         write_only_fields = ('password',)
-
-
-class ShowUserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        exclude = ('password', 'groups', 'user_permissions', 'is_staff', 'is_superuser',)
-
-
-class LoginUserSerializer(serializers.ModelSerializer):
-    email = serializers.EmailField(required=True)
-
-    class Meta:
-        model = User
-        fields = ('email', 'password')
-
-
-class SchoolsSerializer(serializers.ModelSerializer):
-    school_classrooms = serializers.SerializerMethodField()
-
-    def get_school_classrooms(self, obj):
-        return SchoolsClassrooms.objects.get_list_classrooms_by_school(obj.id)
-
-    class Meta:
-        model = Schools
-        fields = '__all__'

@@ -1,7 +1,5 @@
 from django import forms
 
-from users.models import Schools
-
 
 class GetFileForStudentCalculationForm(forms.Form):
     school_name = forms.CharField(
