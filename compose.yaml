@@ -1,5 +1,8 @@
 version: '3.9'
 services:
+
+
+
   server:
     container_name: sport-connect-api
     restart: always
@@ -22,6 +25,9 @@ services:
       - "8000:8000"
     depends_on:
       - database
+
+
+
 
   celery_worker:
     container_name: celery-worker
