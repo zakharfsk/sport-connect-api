@@ -43,6 +43,8 @@ services:
       - server
       - rabbitmq
 
+
+
   flower:
     container_name: flower
     build:
@@ -98,6 +100,9 @@ services:
       - ./certbot/www:/var/www/certbot
     depends_on:
       - server
+
+
+
 
 volumes:
   static:
