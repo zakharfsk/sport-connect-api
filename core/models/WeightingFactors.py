@@ -12,6 +12,9 @@ class WeightingFactors(BaseModel):
                                                related_name="weighting_factors", verbose_name="Норматив")
     weighting_factor = models.FloatField(verbose_name="Ваговий коефіцієнт")
 
+    def __str__(self):
+        return f"{self.sport} - {self.average_value_standard.standard.name} - {self.weighting_factor}"
+
     class Meta:
         db_table = "weighting_factors"
         verbose_name = "Вагові коефіцієнти (за випробуваннями)"

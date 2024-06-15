@@ -28,7 +28,7 @@ class UserAdmin(admin.ModelAdmin):
     search_fields = ("username", "first_name", "last_name", "email")
     filter_horizontal = ("groups", "user_permissions")
     ordering = ("username",)
-    readonly_fields = ("date_joined", "password")
+    readonly_fields = ("date_joined", "password", "fcm_token", "last_login", "date_joined")
     fieldsets = (
         (
             None,
@@ -50,6 +50,7 @@ class UserAdmin(admin.ModelAdmin):
                     "user_classroom",
                     "user_age",
                     "user_gender",
+                    "fcm_token"
                 )
             },
         ),

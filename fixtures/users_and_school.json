@@ -141,6 +141,28 @@
   },
   {
     "model": "users.user",
+    "pk": "1fa28f39-ac57-42f1-82bf-b24357a41914",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$5IHskzAwY3DdszBvLK4am8$n8rdc2lPkzBLqJldWca/07C2Wnj82SWYjXBvgu4X7PU=",
+      "last_login": "2024-06-15T16:55:08.932",
+      "is_superuser": true,
+      "username": "root",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-15T16:55:06.898",
+      "user_school": null,
+      "user_classroom": null,
+      "user_gender": null,
+      "user_age": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
     "pk": "22c5129b-f0ca-43b7-bb90-0f2a2acb5a80",
     "fields": {
       "password": "pbkdf2_sha256$720000$Nt5DsHG7Mw5WG4q57NcpI7$mCDFJC+heM/+p41JZcUl76EbI7h9JcDMfL2I8eARe34=",
