@@ -90,7 +90,7 @@ services:
     image: nginx:latest
     restart: always
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - static:/app/static
       - media:/app/media
