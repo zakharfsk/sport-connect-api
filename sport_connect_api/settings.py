@@ -80,8 +80,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_api_logger',
     # Local Apps
-    'core.apps.CoreConfig',
     'users.apps.UsersConfig',
+    'core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,7 +135,7 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'NAME': BASE_DIR / 'db2.sqlite3',
 #     }
 # }
 

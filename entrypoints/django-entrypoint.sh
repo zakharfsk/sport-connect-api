@@ -3,14 +3,14 @@
 set -o errexit
 set -o nounset
 
-echo "Migrate collect static..."
+echo "Collect static..."
 python manage.py collectstatic --noinput &&
 
-echo "Migrate..."
-python manage.py migrate --noinput &&
-
-echo "Create superuser..."
-python manage.py createsuperuser --noinput &&
+#echo "Migrate..."
+#python manage.py migrate --noinput &&
+#
+#echo "Create superuser..."
+#python manage.py createsuperuser --noinput &&
 
 #echo "Load fixtures..."
 #python -Xutf8 manage.py loaddata ./fixtures/core.json &&

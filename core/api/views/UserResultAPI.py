@@ -4,9 +4,10 @@ from rest_framework import generics, viewsets
 from rest_framework.response import Response
 
 from core.api.serializers import UserResultSerializer
-from core.models import UserResult
 
 __all__ = ('UserResultListAPIView', 'LastUserResultRetrieveAPIView',)
+
+from core.models import UserResult
 
 
 class UserResultListAPIView(generics.ListAPIView):
