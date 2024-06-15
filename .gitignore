@@ -4,8 +4,7 @@
 env
 data
 static
-.gitignore
-nginx-conf.d/localhost.conf
+nginx-conf.d/api.sport-connect.co.ua.conf
 rabbitmq/
 *.db
 certbot
