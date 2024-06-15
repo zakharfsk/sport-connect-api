@@ -1,0 +1,536 @@
+[
+  {
+    "model": "users.schools",
+    "pk": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+    "fields": {
+      "school_name": "НВО №5",
+      "school_city": "Хмельницький"
+    }
+  },
+  {
+    "model": "users.schools",
+    "pk": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+    "fields": {
+      "school_name": "Ліцей №16",
+      "school_city": "Хмельницький"
+    }
+  },
+  {
+    "model": "users.schools",
+    "pk": "e562408b-abae-41bc-b110-1245412d0648",
+    "fields": {
+      "school_name": "Ліцей №2",
+      "school_city": "Хмельницький"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "0a7ed93d-f519-443c-96bb-1819b8ac319a",
+    "fields": {
+      "school": "e562408b-abae-41bc-b110-1245412d0648",
+      "class_number": 5,
+      "class_letter": "Г"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+    "fields": {
+      "school": "e562408b-abae-41bc-b110-1245412d0648",
+      "class_number": 5,
+      "class_letter": "А"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "29b6f26a-3f07-4673-8f51-7d621b55400d",
+    "fields": {
+      "school": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+      "class_number": 8,
+      "class_letter": "Д"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "43d37b9c-691b-4d47-93ba-7fb0e9202d58",
+    "fields": {
+      "school": "e562408b-abae-41bc-b110-1245412d0648",
+      "class_number": 5,
+      "class_letter": "Б"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "46aee031-2672-467b-aca8-54fc06dd4f2c",
+    "fields": {
+      "school": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+      "class_number": 5,
+      "class_letter": "Г"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "9da37d1b-b46b-4713-bbc0-f1e5a28ce7eb",
+    "fields": {
+      "school": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+      "class_number": 7,
+      "class_letter": "Б"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "f038669b-8777-4614-8b86-99b31359bdc3",
+    "fields": {
+      "school": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+      "class_number": 6,
+      "class_letter": "А"
+    }
+  },
+  {
+    "model": "users.schoolsclassrooms",
+    "pk": "f2af3b04-bdf7-4326-ba21-d9a7c7b1685d",
+    "fields": {
+      "school": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+      "class_number": 5,
+      "class_letter": "В"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "112dee0b-3d56-4ac1-a372-8826791d6623",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$FvN6zppILSyMPpELVnRlD6$VdL3BN+RfGhNqctYdVJJnlwBtwLaipMAI1v5w/zKIKU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tsymbalnazariy@gmail.com",
+      "first_name": "Назарій",
+      "last_name": "Цимбал",
+      "email": "tsymbalnazariy@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:42:35.927",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Юнак",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "182b4b2c-0925-48f1-b2db-fca8a6e18f9d",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$s4BeK8eoARcsuL5Demiapj$GIff2hIiy5YF6ihRK9+70hwpUa7jPSAnVjEjgBhyBhQ=",
+      "last_login": "2024-03-29T23:49:14.987",
+      "is_superuser": false,
+      "username": "test@gmail.com",
+      "first_name": "Test",
+      "last_name": "Test",
+      "email": "test@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-12T01:44:16.625",
+      "user_school": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+      "user_classroom": "f038669b-8777-4614-8b86-99b31359bdc3",
+      "user_gender": "Юнак",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "22c5129b-f0ca-43b7-bb90-0f2a2acb5a80",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Nt5DsHG7Mw5WG4q57NcpI7$mCDFJC+heM/+p41JZcUl76EbI7h9JcDMfL2I8eARe34=",
+      "last_login": "2024-03-11T15:33:14.505",
+      "is_superuser": false,
+      "username": "yuriy_dutchak",
+      "first_name": "Юрій",
+      "last_name": "Дутчак",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-11T09:43:11.250",
+      "user_school": null,
+      "user_classroom": null,
+      "user_gender": "Юнак",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        53,
+        54,
+        55,
+        56,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        48
+      ]
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "23276ce3-5aa4-41aa-a651-2a82b981d54a",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$mdw4QE6FVO6GuQzTMAjUl6$sryETWwjKgfTagJr1Ik0tprMb1ikVAMZLWrV9U2wQM0=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "testq@gmail.com",
+      "first_name": "Павло",
+      "last_name": "Тичина",
+      "email": "testq@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-10T21:07:19.147",
+      "user_school": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+      "user_classroom": "f2af3b04-bdf7-4326-ba21-d9a7c7b1685d",
+      "user_gender": "Юнак",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "261d62a0-5b64-410b-bf61-91f73f2c6473",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$CfoeTKwkNNQRErOnwKEGEF$6brALo3AEluOs4vOgF2MYNfpvyUAA5gtJDj7Fqqq1jE=",
+      "last_login": "2024-06-03T22:22:30.097",
+      "is_superuser": true,
+      "username": "zakharfsk",
+      "first_name": "Zakhar",
+      "last_name": "Fesik",
+      "email": "zakhar.fesik@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-11T09:34:55.322",
+      "user_school": null,
+      "user_classroom": null,
+      "user_gender": null,
+      "user_age": null,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "4fca0ac2-3204-4870-a822-be4d12b01da4",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$WpBIiEdefF3BpvICifk6OK$Wjo72p2nWzR/Jn2hvb0xpCDINP9D6y3VLRNENqam0e4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "hbatsura@kmnvk2.ukr.education",
+      "first_name": "Бацурп",
+      "last_name": "Гліб",
+      "email": "hbatsura@kmnvk2.ukr.education",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:45:02.198",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Юнак",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "59088056-ccad-4d25-ae94-0c94fe1b9222",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$qgSbkthCizNDgDXXrzeGjq$1w5FHfi+mZPn/kj6h1twIcf7YuSsEV3RHandIGIHnJQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sprksi@gmail.com",
+      "first_name": "Ксенія",
+      "last_name": "Спринчук",
+      "email": "sprksi@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-06T16:57:12.276",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Дівчина",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "724241ef-2677-40cd-a6fd-e92d0e21a43e",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$6R3vMN76jzMWeT0oqk518y$JJ8Ha1YBZeiIjkuaB+1xQRz314/94c91/FiO5a01TZI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Soltyk_sasha@i.ua",
+      "first_name": "Олександр",
+      "last_name": "Солтик",
+      "email": "Soltyk_sasha@i.ua",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-06T19:56:23.287",
+      "user_school": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+      "user_classroom": "f2af3b04-bdf7-4326-ba21-d9a7c7b1685d",
+      "user_gender": "Юнак",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "7be441de-46e2-4069-802a-dd5d491e256b",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$EhNCpLJvHR2KOzWfIiZMyc$KlZlbmGhUq60XfkSlLo5GUJjjj2Nvu8lP1xu5UEzZUo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ntsymbal@kmnvk2.ukr.education",
+      "first_name": "Назарій",
+      "last_name": "Цимбал",
+      "email": "ntsymbal@kmnvk2.ukr.education",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:43:12.490",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Юнак",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "9462b869-a271-47b8-b874-cf3dedb6fe04",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$06pHcNVuHDETNfbCHW6txw$jPGnKhnm37mtCP1Kzznm1Wait3fTQnTJiGEAkEFh0H8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "arinkaomel04@gmail.com",
+      "first_name": "Аріна",
+      "last_name": "Омельченко",
+      "email": "arinkaomel04@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:46:18.723",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Дівчина",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "a185e3d6-ff8b-40b8-9449-1f88d8c8173d",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$G28UboFboGQremREunajeD$fzzR6g+inKtmzTlHUm9S7Q5NWeRsoyIogOVkySYPcls=",
+      "last_login": "2024-06-11T12:19:05.025",
+      "is_superuser": false,
+      "username": "oleksandr_soltyk",
+      "first_name": "Олександр",
+      "last_name": "Солтик",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-11T09:40:55.684",
+      "user_school": null,
+      "user_classroom": null,
+      "user_gender": "Юнак",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        53,
+        54,
+        55,
+        56,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        48
+      ]
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "bdb3269d-3a51-4dd3-b595-9e6eff8fb09d",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$cJytyOVR1Io3hX4Kl3rv7L$BH3reOfB4a/p69osxZEHcDhDPZ/0RShXQM9wrrJtK3g=",
+      "last_login": "2024-03-29T22:40:04.326",
+      "is_superuser": false,
+      "username": "git_ronin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-12T13:33:42.133",
+      "user_school": null,
+      "user_classroom": null,
+      "user_gender": null,
+      "user_age": null,
+      "groups": [],
+      "user_permissions": [
+        52,
+        47,
+        48
+      ]
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "bdf8ea87-7567-4827-815d-d39a3f451ac2",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$bCpsls1iPw8tuFePVGZYsg$WA1d1rY+AfBCqiOGFd/Nzq7w2Tr4QHG5Q1+uY89Ib1k=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "testn@gmail.com",
+      "first_name": "Павло",
+      "last_name": "Шевченко",
+      "email": "testn@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-10T21:00:41.075",
+      "user_school": "3e8ad30f-5807-46cc-81ec-b8e7f1b04b19",
+      "user_classroom": "f2af3b04-bdf7-4326-ba21-d9a7c7b1685d",
+      "user_gender": "Дівчина",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "d42e0786-45ca-41b4-94f6-935e44c1cc59",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$dsO4zBWxjjvHwm9eesn2mD$LZcm4SBbNtNLWEdeyzVMI/0P2/Y4frdk0q9KkAVvqjU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test2@gmail.com",
+      "first_name": "Тест",
+      "last_name": "Тест",
+      "email": "test2@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-16T17:11:38.641",
+      "user_school": "7d0bf111-981b-4c18-9e92-1af9384f4e2f",
+      "user_classroom": "f038669b-8777-4614-8b86-99b31359bdc3",
+      "user_gender": "Дівчина",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "e63f98cc-2154-42ce-a6dc-a2ed8fd9c708",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$WutYmougiFFJQuu3x8HYLW$1X2iEHGN2AUgkA7T9FefXMkNrTWSaZpnO/wYmePx92g=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Vikaskahenuk@gmail.com",
+      "first_name": "Вікторія",
+      "last_name": "Скаженюк",
+      "email": "Vikaskahenuk@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:44:49.648",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Дівчина",
+      "user_age": 10,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "eb430701-21d0-4f49-9299-055bcc345f82",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$L0CO2vl26QLfngnIyTQUlB$KlHF7HiaOkrxPTLIgaJfI9eaxm6Z4cryUFiwFBhMbQc=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yaroslavvakulenok@gmail.com",
+      "first_name": "Ярослав",
+      "last_name": "Вакуленок",
+      "email": "yaroslavvakulenok@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:52:04.383",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Юнак",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": "f9372b42-5ed7-45ef-a963-f6d928241317",
+    "fields": {
+      "password": "pbkdf2_sha256$720000$C2fckChirPo8zhAlOk7CUw$aqeWY/9I5FwWUtrYE2YBN7dCGr+h0DaXMRiUBgGCmvg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Anastasia@gmail.com",
+      "first_name": "Анастасія",
+      "last_name": "Мельникова",
+      "email": "Anastasia@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-07T09:46:11.462",
+      "user_school": "e562408b-abae-41bc-b110-1245412d0648",
+      "user_classroom": "142ec81b-e3ec-4936-8498-96664c3c02fc",
+      "user_gender": "Дівчина",
+      "user_age": 11,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
