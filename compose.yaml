@@ -1,14 +1,11 @@
-version: '3.9'
+version: '3.11'
 services:
-
-
-
   server:
     container_name: sport-connect-api
     restart: always
     build:
       context: .
-      dockerfile: dockerfiles/Dockerfile
+      dockerfile: Dockerfile
     command: /django
     environment:
       DATABASE_HOST: "postgres"
@@ -26,15 +23,12 @@ services:
     depends_on:
       - database
 
-
-
-
   celery_worker:
     container_name: celery-worker
     restart: always
     build:
       context: .
-      dockerfile: dockerfiles/Dockerfile
+      dockerfile: Dockerfile
     command: /start-celeryworker
     environment:
       DATABASE_HOST: "postgres"
@@ -43,8 +37,6 @@ services:
     volumes:
       - .:/app
       - media:/app/media
-      - redis_data:/var/lib/redis
-      - flower_data:/var/lib/flower
     depends_on:
       - server
       - rabbitmq
@@ -53,8 +45,10 @@ services:
     container_name: flower
     build:
       context: .
-      dockerfile: dockerfiles/Dockerfile
+      dockerfile: Dockerfile
     command: /start-flower
+    environment:
+      DATABASE_HOST: "postgres"
     volumes:
       - .:/app
     env_file:
@@ -82,11 +76,14 @@ services:
     image: rabbitmq:3.13.0-management
     container_name: rabbitmq
     restart: always
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
     volumes:
-      - ./rabbitmq:/var/lib/rabbitmq
+      - rabbitmq:/var/lib/rabbitmq
     ports:
       - "5672:5672"
-      - "15672:15672"
+      - "8080:15672"
 
   nginx:
     container_name: nginx-api
@@ -94,14 +91,10 @@ services:
     restart: always
     ports:
       - "80:80"
-      - "443:443"
     volumes:
-      - .:/app
       - static:/app/static
       - media:/app/media
       - ./nginx-conf.d:/etc/nginx/conf.d
-      - ./certbot/conf:/etc/letsencrypt
-      - ./certbot/www:/var/www/certbot
     depends_on:
       - server
 
@@ -109,7 +102,5 @@ volumes:
   static:
   media:
   flower_data:
-  redis_data:
   sport-connect-api-data:
-
-
+  rabbitmq:

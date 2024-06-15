@@ -178,7 +178,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # redis://redis:6380/0
-CELERY_BROKER_URL = env.str("RABBMITMQ_URL")
+CELERY_BROKER_URL = env.str("RABBITMQ_URL")
 CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3000}
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'

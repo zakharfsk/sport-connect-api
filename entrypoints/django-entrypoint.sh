@@ -12,8 +12,8 @@ python manage.py migrate --noinput &&
 echo "Create superuser..."
 python manage.py createsuperuser --noinput &&
 
-echo "Load fixtures..."
-python -Xutf8 manage.py loaddata ./fixtures/core.json &&
+#echo "Load fixtures..."
+#python -Xutf8 manage.py loaddata ./fixtures/core.json &&
 
 echo "Starting server..."
 gunicorn 'sport_connect_api.wsgi' --reload --bind=0.0.0.0:8000

@@ -97,7 +97,7 @@ def calculate_standards_result(file_result: list):
         for user_standards, value in res['standards'].items():
             try:
                 average = AverageValuesStandards.objects.get(
-                    name_standard=user_standards,
+                    name_standard__name=user_standards,
                     children_age=res['Вік'],
                     children_gender=res['Стать']
                 )
@@ -146,7 +146,7 @@ def calculate_sports_aptitude(standards_result: list):
     for sport in Sport.objects.all():
         weight_factors = dict(
             WeightingFactors.objects.filter(sport=sport.pk)
-            .values_list("average_value_standard__name_standard", "weighting_factor")
+            .values_list("average_value_standard__name_standard__name", "weighting_factor")
         )
 
         for st_res in standards_result:

@@ -14,6 +14,7 @@ class User(AbstractUser, BaseModel):
         ('Юнак', 'Юнак')),
         max_length=256, blank=True, null=True)
     user_age = models.IntegerField(choices=((10, 10), (11, 11)), blank=True, null=True)
+    fcm_token = models.CharField(max_length=256, blank=True, null=True)
 
     def to_xlsx_format(self):
         return {
