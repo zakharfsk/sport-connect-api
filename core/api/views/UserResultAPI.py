@@ -17,7 +17,7 @@ class UserResultListAPIView(generics.ListAPIView):
 
 class LastUserResultRetrieveAPIView(viewsets.ViewSet):
     serializer_class = UserResultSerializer
-    queryset = UserResult.objects.order_by('-date_created').get()
+    queryset = UserResult.objects.order_by('-date_created').all()
 
     @swagger_auto_schema(responses={200: openapi.Response('Last user result', UserResultSerializer)})
     def get(self, request):
