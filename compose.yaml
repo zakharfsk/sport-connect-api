@@ -68,7 +68,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: sport_connect_db
     volumes:
-      - sport-connect-api-data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
 
@@ -102,5 +102,5 @@ volumes:
   static:
   media:
   flower_data:
-  sport-connect-api-data:
+  postgres_data:
   rabbitmq:
