@@ -69,9 +69,7 @@ services:
       POSTGRES_DB: sport_connect_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-
+  
   rabbitmq:
     image: rabbitmq:3.13.0-management
     container_name: rabbitmq
