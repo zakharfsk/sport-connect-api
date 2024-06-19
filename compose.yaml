@@ -60,7 +60,7 @@ services:
       - database
 
   database:
-    image: postgres:15
+    image: postgres:latest
     container_name: postgres
     restart: always
     environment:
