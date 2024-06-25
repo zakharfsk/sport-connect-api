@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     command: /django
     environment:
-      DATABASE_HOST: "postgres"
+      #DATABASE_HOST: "postgres"
       DJANGO_SUPERUSER_PASSWORD: "root"
       DJANGO_SUPERUSER_USERNAME: "root"
       DJANGO_SUPERUSER_EMAIL: "root@root.com"
@@ -20,8 +20,8 @@ services:
       - ".env"
     ports:
       - "8000:8000"
-    depends_on:
-      - database
+        #depends_on:
+      #- database
 
   celery_worker:
     container_name: celery-worker
@@ -57,20 +57,20 @@ services:
       - "5557:5555"
     depends_on:
       - rabbitmq
-      - database
+        #- database
 
-  database:
-    image: postgres:latest
-    container_name: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: sport_connect_db
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
+        #database:
+        #image: postgres:latest
+        #container_name: postgres
+        #restart: always
+        #environment:
+        #POSTGRES_USER: postgres
+        #POSTGRES_PASSWORD: postgres
+        #POSTGRES_DB: sport_connect_db
+        #volumes:
+        #- postgres_data:/var/lib/postgresql/data
+        #ports:
+        # - "5432:5432"
   
   rabbitmq:
     image: rabbitmq:3.13.0-management
@@ -102,5 +102,5 @@ volumes:
   static:
   media:
   flower_data:
-  postgres_data:
+    #postgres_data:
   rabbitmq:
