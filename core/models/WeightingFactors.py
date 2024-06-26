@@ -8,7 +8,7 @@ __all__ = ('WeightingFactors',)
 class WeightingFactors(BaseModel):
     sport = models.ForeignKey('core.Sport', on_delete=models.CASCADE, related_name="weighting_factors",
                               verbose_name="Вид спорту")
-    average_value_standard = models.ForeignKey('core.AverageValuesStandards', on_delete=models.CASCADE,
+    average_value_standard = models.ForeignKey('core.SportStandard', on_delete=models.CASCADE,
                                                related_name="weighting_factors", verbose_name="Норматив")
     weighting_factor = models.FloatField(verbose_name="Ваговий коефіцієнт")
 
