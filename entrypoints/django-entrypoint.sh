@@ -6,6 +6,9 @@ set -o nounset
 echo "Collect static..."
 python manage.py collectstatic --noinput &&
 
+echo "Make migrations..."
+python manage.py makemigrations &&
+
 echo "Migrate..."
 python manage.py migrate --noinput &&
 
