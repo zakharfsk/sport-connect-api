@@ -1,1 +1,100 @@
-[{"model": "core.sportstandard", "pk": "0017e87d-5473-47d0-9b26-ef451721d58d", "fields": {"name": "Викрут мірної лінійки (різниця від ширини плечей), см"}}, {"model": "core.sportstandard", "pk": "05330038-2097-442c-b855-2c49bbc77943", "fields": {"name": "Нахил тулуба стоячи (нахили тулуба вперед з положення сидячи), см"}}, {"model": "core.sportstandard", "pk": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "fields": {"name": "Ваго-ростовий індекс (індекс маси тіла)"}}, {"model": "core.sportstandard", "pk": "114296f5-8516-49ba-bad3-f2ed31844c78", "fields": {"name": "Зріст, см"}}, {"model": "core.sportstandard", "pk": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "fields": {"name": "Співвідношення розмаху рук до довжини тіла стоячи, см"}}, {"model": "core.sportstandard", "pk": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "fields": {"name": "Стрибки на скакалці за 60с, кількість"}}, {"model": "core.sportstandard", "pk": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "fields": {"name": "Згинання розгинання рук в упорі лежачи, кількість"}}, {"model": "core.sportstandard", "pk": "93476d15-a688-4c8b-8a5f-6023b83dc731", "fields": {"name": "Кидок набивного м’яча на дальність (1 кг), м"}}, {"model": "core.sportstandard", "pk": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "fields": {"name": "Підіймання тулуба в сід за 60с, кількість"}}, {"model": "core.sportstandard", "pk": "a667255b-fa40-4962-a646-ce612dc597fc", "fields": {"name": "Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"}}, {"model": "core.sportstandard", "pk": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "fields": {"name": "Біг 30м, с"}}, {"model": "core.sportstandard", "pk": "ac210af3-c5db-4485-932f-033ff566ee0d", "fields": {"name": "Стрибок з місця у довжину, см"}}, {"model": "core.sportstandard", "pk": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "fields": {"name": "Швидкість реакції (ловля палиця, яка має сантиметрові помітки), см"}}, {"model": "core.sportstandard", "pk": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "fields": {"name": "Човниковий біг (4х9м), с"}}]
+[
+  {
+    "model": "core.sportstandard",
+    "pk": "0017e87d-5473-47d0-9b26-ef451721d58d",
+    "fields": {
+      "name": "Викрут мірної лінійки (різниця від ширини плечей), см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "05330038-2097-442c-b855-2c49bbc77943",
+    "fields": {
+      "name": "Нахил тулуба стоячи (нахили тулуба вперед з положення сидячи), см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+    "fields": {
+      "name": "Ваго-ростовий індекс (індекс маси тіла)"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "114296f5-8516-49ba-bad3-f2ed31844c78",
+    "fields": {
+      "name": "Зріст, см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+    "fields": {
+      "name": "Співвідношення розмаху рук до довжини тіла стоячи, см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+    "fields": {
+      "name": "Стрибки на скакалці за 60с, кількість"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+    "fields": {
+      "name": "Згинання розгинання рук в упорі лежачи, кількість"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+    "fields": {
+      "name": "Кидок набивного м’яча на дальність (1 кг), м"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+    "fields": {
+      "name": "Підіймання тулуба в сід за 60с, кількість"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "a667255b-fa40-4962-a646-ce612dc597fc",
+    "fields": {
+      "name": "Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+    "fields": {
+      "name": "Біг 30м, с"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "ac210af3-c5db-4485-932f-033ff566ee0d",
+    "fields": {
+      "name": "Стрибок з місця у довжину, см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+    "fields": {
+      "name": "Швидкість реакції (ловля палиця, яка має сантиметрові помітки), см"
+    }
+  },
+  {
+    "model": "core.sportstandard",
+    "pk": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+    "fields": {
+      "name": "Човниковий біг (4х9м), с"
+    }
+  }
+]
