@@ -22,7 +22,7 @@ from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
 
-from core.models import AverageValuesStandards, Sport, WeightingFactors
+from core.models import AverageValuesStandards, Sport, WeightingFactors, SportStandard
 
 logger = logging.getLogger(__name__)
 
@@ -96,8 +96,9 @@ def calculate_standards_result(file_result: list):
         d = {"id": res["id"]}
         for user_standards, value in res['standards'].items():
             try:
+
                 average = AverageValuesStandards.objects.get(
-                    name_standard__name=user_standards,
+                    standard__name=user_standards,
                     children_age=res['Вік'],
                     children_gender=res['Стать']
                 )
@@ -105,6 +106,8 @@ def calculate_standards_result(file_result: list):
                 d[user_standards] = result
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
+            except SportStandard.DoesNotExist:
+                logger.warning(f"calculate_standards_result {user_standards} not found(sportstandart)")
         data.append(d)
     return data
 
@@ -146,7 +149,7 @@ def calculate_sports_aptitude(standards_result: list):
     for sport in Sport.objects.all():
         weight_factors = dict(
             WeightingFactors.objects.filter(sport=sport.pk)
-            .values_list("average_value_standard__name_standard__name", "weighting_factor")
+            .values_list("sport_standard__name", "weighting_factor")
         )
 
         for st_res in standards_result:
