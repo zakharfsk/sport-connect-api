@@ -12,6 +12,8 @@ def calculate_formula_results(file_path: str):
     standards = calculation.calculate_standards_result(exel_data)
     results = calculation.calculate_sports_aptitude(standards)
 
+    print(results)
+    return results
     for result in results:
         UserResult.objects.create(user_id=result['id'], result=result)
         trigger_event(
