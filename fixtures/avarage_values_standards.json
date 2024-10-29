@@ -312,7 +312,7 @@
     "pk": "920ba37a-22bc-4946-b12b-8dc3635cd01b",
     "fields": {
       "standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
-      "children_age": 11,
+      "children_age": 10,
       "children_gender": "Дівчина",
       "average_value": 26.1,
       "sigma": 2.1

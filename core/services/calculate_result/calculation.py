@@ -17,6 +17,7 @@
 ]
 """
 import logging
+from pprint import pprint
 
 from openpyxl import load_workbook
 from django.conf import settings
@@ -66,11 +67,15 @@ def get_data_from_excel(file_path: str) -> list:
                 else:
                     d[key] = val
         d["standards"][
-            "Вагово-ростовий індекс (індекс маси тіла)"
+            "Ваго-ростовий індекс (індекс маси тіла)"
         ] = d["standards"]['Зріст, см'] / d["standards"]['Маса, гр']
 
         d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = \
             d["standards"]['Периметр плеча напруженого, см'] / d["standards"]['Периметр плеча розслабленого, см']
+
+        d.get("standards",{}).pop('Маса, гр')
+        d.get("standards", {}).pop('Периметр плеча розслабленого, см')
+        d.get("standards", {}).pop('Периметр плеча напруженого, см')
         data.append(d)
     default_storage.delete(file_path)
 
@@ -91,23 +96,25 @@ def calculate_standards_result(file_result: list):
         - User standards as keys and their respective calculated results.
 
     """
+    print(file_result)
     data = []
     for res in file_result:
         d = {"id": res["id"]}
         for user_standards, value in res['standards'].items():
             try:
-
+                #print(f"standard name:{user_standards}")
+                #print(f"value:{value}")
                 average = AverageValuesStandards.objects.get(
                     standard__name=user_standards,
                     children_age=res['Вік'],
                     children_gender=res['Стать']
                 )
+
                 result = 50 + 10 * ((value - average.average_value) / average.sigma)
                 d[user_standards] = result
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
-            except SportStandard.DoesNotExist:
-                logger.warning(f"calculate_standards_result {user_standards} not found(sportstandart)")
+
         data.append(d)
     return data
 
@@ -146,18 +153,22 @@ def calculate_sports_aptitude(standards_result: list):
     - The WeightingFactors model also should have a "weighting_factor" field representing the factor to be used for calculating the sports aptitude.
     """
     result = []
-    for sport in Sport.objects.all():
-        weight_factors = dict(
-            WeightingFactors.objects.filter(sport=sport.pk)
-            .values_list("sport_standard__name", "weighting_factor")
-        )
 
-        for st_res in standards_result:
+    for st_res in standards_result:
+
+        result_dict = {"id": st_res["id"],"sport_results":[]}
+
+        for sport in Sport.objects.all():
+            weight_factors = dict(
+                WeightingFactors.objects.filter(sport=sport.pk)
+                .values_list("sport_standard__name", "weighting_factor")
+            )
+
             res = 0
-            result_dict = {"id": st_res["id"]}
             for key, value in st_res.items():
                 if key in weight_factors:
                     res += value * weight_factors[key]
-            result_dict[sport.name] = res
-            result.append(result_dict)
+
+            result_dict["sport_results"].append({sport.name: res})
+        result.append(result_dict)
     return result
