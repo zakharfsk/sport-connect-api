@@ -73,9 +73,17 @@ def get_data_from_excel(file_path: str) -> list:
         d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = \
             d["standards"]['Периметр плеча напруженого, см'] / d["standards"]['Периметр плеча розслабленого, см']
 
+        d["standards"]["Співвідношення розмаху рук до довжини тіла стоячи, см"]= \
+            d["standards"]["Ширина рук, см"] - d["standards"]['Зріст, см']
+
+        d["standards"]["Викрут мірної лінійки, см"] = \
+            d["standards"]["Викрут мірної лінійки, см"] - d["standards"]["Ширина плечей, см"]
+
         d.get("standards",{}).pop('Маса, гр')
         d.get("standards", {}).pop('Периметр плеча розслабленого, см')
         d.get("standards", {}).pop('Периметр плеча напруженого, см')
+        d.get("standards", {}).pop('Ширина плечей, см')
+        d.get("standards", {}).pop('Ширина рук, см')
         data.append(d)
     default_storage.delete(file_path)
 
