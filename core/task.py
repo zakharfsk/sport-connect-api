@@ -9,7 +9,10 @@ from sport_connect_api.pusher import trigger_event
 @app.task
 def calculate_formula_results(file_path: str):
     exel_data = calculation.get_data_from_excel(file_path)
+    #print(exel_data)
     standards = calculation.calculate_standards_result(exel_data)
+    #print(standards)
+    #return None
     results = calculation.calculate_sports_aptitude(standards)
 
 

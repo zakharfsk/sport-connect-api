@@ -1,1 +1,1424 @@
-[{"model": "core.weightingfactors", "pk": "049ac5de-8c89-4839-a83c-1b801dc7a038", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "05abc812-37f4-452b-bc07-b28eacad81e7", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "0a88a507-a3bf-4aaa-9839-95b42691efad", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "0cb84750-a977-4241-b6d2-cc83dc1ff250", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "0e49f8c7-ce73-4dfa-a4f3-f7ee9804f767", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "0e645274-fe9c-4267-bfa7-70e0ee54f535", "fields": {"sport": "d347068d-882c-4d3b-af4c-26f5a004ee45", "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "0ef763ac-058b-4277-9194-40559411859b", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "1081cad0-1a87-44d0-a97d-36d754ba3d8b", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "10bdae9d-f8f0-4487-992d-64b5c2a015d2", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "10d02c0c-ed57-4e01-86bd-ec24fee76217", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "157eefea-3b74-4550-9ccd-a2d04a578114", "fields": {"sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "185480b1-5276-4e89-a35d-ac7a44bc8987", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "1ce15c87-9152-4f97-b66a-4f83dd121bee", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "1ff67ee8-f83a-40cf-9976-07d526443e23", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "232536f5-294d-493e-941c-f5610944a65c", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "246d86b2-cdc4-4b4d-aa28-6f0b893cd4cc", "fields": {"sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "25252166-3587-422d-ad9b-e37cfd31d46d", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "25c84768-9f82-4efc-ae3f-a07ea35ff2cb", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "26588adc-6235-4ca1-be0f-85d8a4e2f7ad", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "267f455c-d7bb-4f12-bb2b-b91338e183b3", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "26c861d7-8783-41bd-af40-f44ba8445111", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "29ea35c7-02c4-4049-8931-009ad3528e8c", "fields": {"sport": "d347068d-882c-4d3b-af4c-26f5a004ee45", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "2c5c304d-be80-48f8-a417-205f6f6f7b09", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "2db4e41f-fa92-42e6-9e1e-1b2bcbe0efd7", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.35}}, {"model": "core.weightingfactors", "pk": "2e336c8a-8d69-4091-be8e-79f61ca3035d", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "2e8cd83a-1269-44e0-8b87-e62f5d6b684c", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "31ab7854-6d47-4c0a-9f61-2ff9adefc99f", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "33b208a3-a6ff-4456-b7d8-556d2ab1eedd", "fields": {"sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "3775ca10-4c06-4e7a-8dc9-dbc76aaf76f7", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "3806931e-b88f-4d49-be17-403541806cf5", "fields": {"sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "3aaf641a-804b-404d-b398-4afbc46a300f", "fields": {"sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "3be1e196-e30e-4890-b544-4b473ba45bf7", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "3d8f1e83-6861-4731-a5e8-cee37a6fe413", "fields": {"sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.4}}, {"model": "core.weightingfactors", "pk": "3eebacd9-45b5-433b-87c6-cf604d07ec95", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "438dd81f-e765-4f66-b652-7266f52c0a2a", "fields": {"sport": "122a7bdc-3858-4798-b265-65cdc387bdf0", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.45}}, {"model": "core.weightingfactors", "pk": "44ec6f40-f07e-46b6-a09c-bd6b73add213", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "4554f53e-1eac-438b-b777-61bf7c5783de", "fields": {"sport": "122a7bdc-3858-4798-b265-65cdc387bdf0", "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "weighting_factor": -0.2}}, {"model": "core.weightingfactors", "pk": "45ff3fcf-ebcb-4aff-9b0e-ea51e1b7ee2d", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "497d9aa0-df6d-4068-a5e7-79d25157aa6d", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "49801de5-710a-43ec-925b-98bf5bbb4bdb", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "4b16e87b-a127-4c91-bf25-a96d3f1834be", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "4b7554c0-7cc0-45e8-8f35-783ed49e2d88", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "4bf82ebb-b289-4f24-8128-678bfb43b428", "fields": {"sport": "d347068d-882c-4d3b-af4c-26f5a004ee45", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "4f4a4ae6-0a88-4725-88cd-86663e8e123c", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "55b98681-a21c-4c50-9c10-cb3283de9b0a", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "55d75912-e913-4b8c-b6f6-6955070230db", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "596f7d38-d30c-47e5-bac7-0ee73495b454", "fields": {"sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "5aa05ade-8e34-40ab-9bec-a5abce5aff95", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "5ca7672b-d30c-484b-870c-1f54b7604d5f", "fields": {"sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "5d62ee2a-d0f4-442f-a257-2e403bd1f02c", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "5e9ab940-318b-4ef5-92fc-4ed4e44b53c9", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "5ffe4a1b-722a-4798-bef9-124be8757cad", "fields": {"sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "60dd2283-308b-4f7b-a2c5-fdc4a6ddf36e", "fields": {"sport": "122a7bdc-3858-4798-b265-65cdc387bdf0", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.4}}, {"model": "core.weightingfactors", "pk": "626afe0f-52e4-4240-8b5e-9a69b224e661", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "64af21ae-52b5-484e-8058-95ea27fcd942", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "656b737c-a94f-4e81-b892-28c25e5c6e36", "fields": {"sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "672a0e27-65c1-4efc-bd0e-f933c6ff7050", "fields": {"sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6", "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "67362997-c66c-4304-87ff-737f980c0a6b", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "6a0e738f-8eda-4f82-b431-d1127b660031", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "6c135d59-1034-431b-8ce2-41712db1034e", "fields": {"sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "70d980e8-624b-4331-99ee-6efa1cba9bf2", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "70ed890d-cbcf-4614-8bf0-b64bdadc16e1", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "71ee9572-19f3-4782-9843-b56a95562ae3", "fields": {"sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "721d3028-77e1-4b19-998a-59df78a6a6aa", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "741ef9ac-776c-4ff7-acd8-08847022600c", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "79a3e53e-d530-40cb-bf64-9f938b108466", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "7b1a0d7a-1c94-4ada-8d62-bdf12730e26f", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "7ca70b49-d44f-43af-bcb4-09c0de325e5c", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "7dab2f72-62dd-4587-a5a8-78ebfebfbe92", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "7e5c7231-da06-4c3b-a438-74e394ebaf66", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "80c972ca-4b07-4952-a8cb-fe3a773ded10", "fields": {"sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "820d1917-d4e3-4264-938b-0a46ee1b62d9", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "829068b6-4a33-4df1-aafc-ebf8be96127d", "fields": {"sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "840d359a-6426-433f-9100-b2d790cbe19a", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "8464071c-bbdf-4591-b0cd-cbad4de5fd86", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "84d6df8c-b353-4d63-a664-db3e9a5b8a3b", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "86fec75c-07f7-4628-ba6f-b3dda81a88ab", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "88e27c6e-669d-44b0-b46f-b78078c646a7", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": -0.1}}, {"model": "core.weightingfactors", "pk": "8ae1acd9-4959-4d37-b243-87aa1d4bdaf7", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "8b44d3f5-e41e-484e-bc94-22fd12a7b6ad", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "8d54e233-75c0-4b75-a631-9dd4633b13fb", "fields": {"sport": "122a7bdc-3858-4798-b265-65cdc387bdf0", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "8e42a481-e0fb-424c-8567-1d81b751ad5c", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "91bf5116-68bb-40a6-a2ba-3ac9d4698a81", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "92eff664-a90a-4c27-90c2-92f20f50ca58", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "937ddd17-116e-483e-a95c-80ca42e93cec", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "9a1378ba-b0eb-4ed5-8265-b0e945716b7a", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "9baf7858-5641-46eb-8db4-d490c747ae66", "fields": {"sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "9d197b14-eabb-43ef-a38a-3646a9c0e4d9", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "9df91860-5a7a-4a67-9297-dc1d6b848d14", "fields": {"sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "9ea0a522-533a-4509-8b78-e16e75fc9b55", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "9f0ede22-c65c-4ff8-a9c0-5af7321eeb2e", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "9f72d982-67ab-4ea8-a8d7-363c3fbf9997", "fields": {"sport": "00000000-0000-0000-0000-000000000001", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "a00c8320-2a5a-4055-baa2-379ca49465c5", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "a1c790a6-1b38-46cf-bb68-f6e763ff226f", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "a23f179c-f196-4aa4-af19-7a967543baea", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "a47ca7d5-6566-43de-a153-db4bbb002775", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "a4af34bc-4f3f-4920-bb3c-04895f13bbe8", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "a6885ac4-be10-4364-bfca-672b6331166d", "fields": {"sport": "d347068d-882c-4d3b-af4c-26f5a004ee45", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "a89fad52-8749-4a61-8fc4-ab0498b7acb0", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "a9438e73-4818-4b52-9c05-3aad6f5a2df0", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.35}}, {"model": "core.weightingfactors", "pk": "a99222cb-7c85-4dba-96f7-3ae109f1fd13", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "abeab44d-62aa-471b-9b8d-822a8c0902a6", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "adcfb9e7-307c-464c-af0e-aefad330e44d", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "b01dc4d9-1f89-4f84-8b7f-8c2cc143c084", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "b13a2d30-0e63-463c-b2a4-f61df01e7c5e", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "b1d6cb8c-9cf4-40ba-aa39-6a2b4b82a13b", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "b30feeeb-ad5a-4b8d-916e-b24f47a16a3d", "fields": {"sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "b387b971-f53a-4ab2-acc4-494a1ba17d5c", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "b3892e9f-8586-49df-b8f9-89e03846fc89", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "b3b64f72-bacf-4e69-b2a1-5526ba29e5d6", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "b46458ab-b40b-4190-b5a3-8b7426d7645c", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "b4a8267d-2d39-4573-8eb4-0fd25bc3c98d", "fields": {"sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "b7a763c0-4625-4efa-a1f5-35a78224ae2d", "fields": {"sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": -0.2}}, {"model": "core.weightingfactors", "pk": "b9288993-6526-47f4-95ea-1e04d66a6122", "fields": {"sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "c099eb31-9ca6-4a35-af80-8a64a21c2502", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "c686b51c-b0eb-45cc-b1b3-c258091515b2", "fields": {"sport": "122a7bdc-3858-4798-b265-65cdc387bdf0", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "c797c6bd-0b9b-4a81-9d8e-b6ca2f299da1", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "c8a2ee95-6f4b-43ae-a900-9317f0b36384", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "c95b9e63-6a23-4cff-aad9-c931159d89b6", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "c9e850f2-8d2f-4256-b586-c88dff9a1e9d", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "cac2bde9-464f-48af-aa32-fa7b5219a5cf", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "cfbde2b8-54ec-4685-a437-6371ab7057e6", "fields": {"sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "d237de85-82a8-495e-981f-ff15bb89c1d7", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "d3736338-b29f-49cc-a153-389feb5dbf57", "fields": {"sport": "7433ef43-0aca-45c8-810e-15c2741f3be5", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "d495b66e-0a21-4f3d-b640-501222c3dc6e", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "d5ebc6ec-c8f3-4b36-ac15-2c4058263433", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.2}}, {"model": "core.weightingfactors", "pk": "d75c27f6-a1cb-4bbc-a18f-b28fed067995", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "d8271d9c-cc55-4b0b-badb-0e7cedb1508a", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "d82c07e1-fc96-4528-a3fa-26a2e4b37e5d", "fields": {"sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "dd8f35f9-94f6-4716-85e3-6b7faaf93ca4", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "de9975b8-783e-4549-8b41-39021166853c", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "e037ea6c-0bb0-451a-a972-4d10f8fdeda1", "fields": {"sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5", "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "e076292e-24f8-449b-b8ff-6706f7d8ce2c", "fields": {"sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee", "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "e552924e-a26d-4c5d-a6c2-63f7a594940b", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "e55a3a40-ca03-45fe-ad43-cc186909e85c", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.25}}, {"model": "core.weightingfactors", "pk": "e8058f92-2ede-4df6-a932-a83d53d3ed93", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "e8bd9f7c-a56f-4181-81ff-82853f420bb0", "fields": {"sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "ec9303f8-0b33-4e29-9668-22c462121efc", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "edb4b729-618c-40a8-864f-ef80c7488fc2", "fields": {"sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": -0.1}}, {"model": "core.weightingfactors", "pk": "eee5c69f-1976-4b40-9ee4-4d720b5618c6", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "ef6d86e4-dd6c-424e-b036-deec7c0fdedb", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "ef91ce74-dbf0-4b4d-a6a6-9a6e4e057e3f", "fields": {"sport": "84ee0d4e-1a46-414c-b517-573f729c930b", "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "efd2f5bf-5d23-4311-979d-07790c7ef582", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f0db4152-6774-4c79-b261-c6d5e6e4a394", "fields": {"sport": "3dafdc4d-675b-455b-8995-8721d0dff21b", "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f17c135d-b5f1-4527-94fd-c1ba9da68c5d", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f1b9c51d-d6d7-4962-b4ca-b093f101cd3c", "fields": {"sport": "2e930b67-b635-4627-b51d-76850a808953", "sport_standard": "05330038-2097-442c-b855-2c49bbc77943", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f20e8533-3ce6-4df2-ad84-4d8d73f51811", "fields": {"sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e", "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc", "weighting_factor": 0.5}}, {"model": "core.weightingfactors", "pk": "f4d956f0-84ad-475d-b159-83542986f8aa", "fields": {"sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f7cf544c-a7f4-44e4-a3ed-8a8caa56080d", "fields": {"sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "f7df55e2-2147-47a4-a5e2-33159a32a5d7", "fields": {"sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0", "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6", "weighting_factor": 0.05}}, {"model": "core.weightingfactors", "pk": "f84717f3-f90e-4e69-95b4-a5b37af915ff", "fields": {"sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "f8cfd3ef-a120-4541-b64f-a67bab1a0d85", "fields": {"sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "faf10e35-062f-4f95-8602-610099e29552", "fields": {"sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.3}}, {"model": "core.weightingfactors", "pk": "fbf70107-4949-434e-aeb0-96967370c726", "fields": {"sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b", "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b", "weighting_factor": 0.1}}, {"model": "core.weightingfactors", "pk": "ff1360eb-9203-4e7d-8bc2-acea583a1299", "fields": {"sport": "e5b8526f-2cf3-4963-aea3-305763504635", "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "ffa1328d-39c1-47c3-964b-fe362341f89e", "fields": {"sport": "28622542-307e-4912-9789-b49179baa0de", "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59", "weighting_factor": 0.15}}, {"model": "core.weightingfactors", "pk": "ffb07335-4e84-4421-85ae-5559745d4808", "fields": {"sport": "3e39d914-aa32-4f07-80b5-d2d560547de9", "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4", "weighting_factor": 0.15}}]
+[
+  {
+    "model": "core.weightingfactors",
+    "pk": "049ac5de-8c89-4839-a83c-1b801dc7a038",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "05abc812-37f4-452b-bc07-b28eacad81e7",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "0a88a507-a3bf-4aaa-9839-95b42691efad",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "0cb84750-a977-4241-b6d2-cc83dc1ff250",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "0e49f8c7-ce73-4dfa-a4f3-f7ee9804f767",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "0e645274-fe9c-4267-bfa7-70e0ee54f535",
+    "fields": {
+      "sport": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+      "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "0ef763ac-058b-4277-9194-40559411859b",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "1081cad0-1a87-44d0-a97d-36d754ba3d8b",
+    "fields": {
+      "sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "10bdae9d-f8f0-4487-992d-64b5c2a015d2",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "10d02c0c-ed57-4e01-86bd-ec24fee76217",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "157eefea-3b74-4550-9ccd-a2d04a578114",
+    "fields": {
+      "sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "185480b1-5276-4e89-a35d-ac7a44bc8987",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "1ce15c87-9152-4f97-b66a-4f83dd121bee",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "1ff67ee8-f83a-40cf-9976-07d526443e23",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "232536f5-294d-493e-941c-f5610944a65c",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "246d86b2-cdc4-4b4d-aa28-6f0b893cd4cc",
+    "fields": {
+      "sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "25252166-3587-422d-ad9b-e37cfd31d46d",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "25c84768-9f82-4efc-ae3f-a07ea35ff2cb",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "26588adc-6235-4ca1-be0f-85d8a4e2f7ad",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "267f455c-d7bb-4f12-bb2b-b91338e183b3",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "26c861d7-8783-41bd-af40-f44ba8445111",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "29ea35c7-02c4-4049-8931-009ad3528e8c",
+    "fields": {
+      "sport": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "2c5c304d-be80-48f8-a417-205f6f6f7b09",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "2db4e41f-fa92-42e6-9e1e-1b2bcbe0efd7",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.35
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "2e336c8a-8d69-4091-be8e-79f61ca3035d",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "2e8cd83a-1269-44e0-8b87-e62f5d6b684c",
+    "fields": {
+      "sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "31ab7854-6d47-4c0a-9f61-2ff9adefc99f",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "33b208a3-a6ff-4456-b7d8-556d2ab1eedd",
+    "fields": {
+      "sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3775ca10-4c06-4e7a-8dc9-dbc76aaf76f7",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3806931e-b88f-4d49-be17-403541806cf5",
+    "fields": {
+      "sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3aaf641a-804b-404d-b398-4afbc46a300f",
+    "fields": {
+      "sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3be1e196-e30e-4890-b544-4b473ba45bf7",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3d8f1e83-6861-4731-a5e8-cee37a6fe413",
+    "fields": {
+      "sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.4
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "3eebacd9-45b5-433b-87c6-cf604d07ec95",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "438dd81f-e765-4f66-b652-7266f52c0a2a",
+    "fields": {
+      "sport": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.45
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "44ec6f40-f07e-46b6-a09c-bd6b73add213",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "4554f53e-1eac-438b-b777-61bf7c5783de",
+    "fields": {
+      "sport": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+      "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+      "weighting_factor": -0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "45ff3fcf-ebcb-4aff-9b0e-ea51e1b7ee2d",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "497d9aa0-df6d-4068-a5e7-79d25157aa6d",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "49801de5-710a-43ec-925b-98bf5bbb4bdb",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "4b16e87b-a127-4c91-bf25-a96d3f1834be",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "4b7554c0-7cc0-45e8-8f35-783ed49e2d88",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "4bf82ebb-b289-4f24-8128-678bfb43b428",
+    "fields": {
+      "sport": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "4f4a4ae6-0a88-4725-88cd-86663e8e123c",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "55b98681-a21c-4c50-9c10-cb3283de9b0a",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "55d75912-e913-4b8c-b6f6-6955070230db",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "596f7d38-d30c-47e5-bac7-0ee73495b454",
+    "fields": {
+      "sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "5aa05ade-8e34-40ab-9bec-a5abce5aff95",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "5ca7672b-d30c-484b-870c-1f54b7604d5f",
+    "fields": {
+      "sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "5d62ee2a-d0f4-442f-a257-2e403bd1f02c",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "5e9ab940-318b-4ef5-92fc-4ed4e44b53c9",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "5ffe4a1b-722a-4798-bef9-124be8757cad",
+    "fields": {
+      "sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "60dd2283-308b-4f7b-a2c5-fdc4a6ddf36e",
+    "fields": {
+      "sport": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.4
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "626afe0f-52e4-4240-8b5e-9a69b224e661",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "64af21ae-52b5-484e-8058-95ea27fcd942",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "656b737c-a94f-4e81-b892-28c25e5c6e36",
+    "fields": {
+      "sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "672a0e27-65c1-4efc-bd0e-f933c6ff7050",
+    "fields": {
+      "sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+      "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "67362997-c66c-4304-87ff-737f980c0a6b",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "6a0e738f-8eda-4f82-b431-d1127b660031",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "6c135d59-1034-431b-8ce2-41712db1034e",
+    "fields": {
+      "sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "70d980e8-624b-4331-99ee-6efa1cba9bf2",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "70ed890d-cbcf-4614-8bf0-b64bdadc16e1",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "71ee9572-19f3-4782-9843-b56a95562ae3",
+    "fields": {
+      "sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "721d3028-77e1-4b19-998a-59df78a6a6aa",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "741ef9ac-776c-4ff7-acd8-08847022600c",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "79a3e53e-d530-40cb-bf64-9f938b108466",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "7b1a0d7a-1c94-4ada-8d62-bdf12730e26f",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "7ca70b49-d44f-43af-bcb4-09c0de325e5c",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "7dab2f72-62dd-4587-a5a8-78ebfebfbe92",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "7e5c7231-da06-4c3b-a438-74e394ebaf66",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "80c972ca-4b07-4952-a8cb-fe3a773ded10",
+    "fields": {
+      "sport": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "820d1917-d4e3-4264-938b-0a46ee1b62d9",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "829068b6-4a33-4df1-aafc-ebf8be96127d",
+    "fields": {
+      "sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "840d359a-6426-433f-9100-b2d790cbe19a",
+    "fields": {
+      "sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "8464071c-bbdf-4591-b0cd-cbad4de5fd86",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "84d6df8c-b353-4d63-a664-db3e9a5b8a3b",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "86fec75c-07f7-4628-ba6f-b3dda81a88ab",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "88e27c6e-669d-44b0-b46f-b78078c646a7",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": -0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "8ae1acd9-4959-4d37-b243-87aa1d4bdaf7",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "8b44d3f5-e41e-484e-bc94-22fd12a7b6ad",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "8d54e233-75c0-4b75-a631-9dd4633b13fb",
+    "fields": {
+      "sport": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "8e42a481-e0fb-424c-8567-1d81b751ad5c",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "91bf5116-68bb-40a6-a2ba-3ac9d4698a81",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "92eff664-a90a-4c27-90c2-92f20f50ca58",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "937ddd17-116e-483e-a95c-80ca42e93cec",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9a1378ba-b0eb-4ed5-8265-b0e945716b7a",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9baf7858-5641-46eb-8db4-d490c747ae66",
+    "fields": {
+      "sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9d197b14-eabb-43ef-a38a-3646a9c0e4d9",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9df91860-5a7a-4a67-9297-dc1d6b848d14",
+    "fields": {
+      "sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9ea0a522-533a-4509-8b78-e16e75fc9b55",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9f0ede22-c65c-4ff8-a9c0-5af7321eeb2e",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "9f72d982-67ab-4ea8-a8d7-363c3fbf9997",
+    "fields": {
+      "sport": "00000000-0000-0000-0000-000000000001",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a00c8320-2a5a-4055-baa2-379ca49465c5",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a1c790a6-1b38-46cf-bb68-f6e763ff226f",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a23f179c-f196-4aa4-af19-7a967543baea",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a47ca7d5-6566-43de-a153-db4bbb002775",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a4af34bc-4f3f-4920-bb3c-04895f13bbe8",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a6885ac4-be10-4364-bfca-672b6331166d",
+    "fields": {
+      "sport": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a89fad52-8749-4a61-8fc4-ab0498b7acb0",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a9438e73-4818-4b52-9c05-3aad6f5a2df0",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.35
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a99222cb-7c85-4dba-96f7-3ae109f1fd13",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "abeab44d-62aa-471b-9b8d-822a8c0902a6",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "adcfb9e7-307c-464c-af0e-aefad330e44d",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b01dc4d9-1f89-4f84-8b7f-8c2cc143c084",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b13a2d30-0e63-463c-b2a4-f61df01e7c5e",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b1d6cb8c-9cf4-40ba-aa39-6a2b4b82a13b",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b30feeeb-ad5a-4b8d-916e-b24f47a16a3d",
+    "fields": {
+      "sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b387b971-f53a-4ab2-acc4-494a1ba17d5c",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b3892e9f-8586-49df-b8f9-89e03846fc89",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b3b64f72-bacf-4e69-b2a1-5526ba29e5d6",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b46458ab-b40b-4190-b5a3-8b7426d7645c",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b4a8267d-2d39-4573-8eb4-0fd25bc3c98d",
+    "fields": {
+      "sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b7a763c0-4625-4efa-a1f5-35a78224ae2d",
+    "fields": {
+      "sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": -0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "b9288993-6526-47f4-95ea-1e04d66a6122",
+    "fields": {
+      "sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c099eb31-9ca6-4a35-af80-8a64a21c2502",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c686b51c-b0eb-45cc-b1b3-c258091515b2",
+    "fields": {
+      "sport": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c797c6bd-0b9b-4a81-9d8e-b6ca2f299da1",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c8a2ee95-6f4b-43ae-a900-9317f0b36384",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c95b9e63-6a23-4cff-aad9-c931159d89b6",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "c9e850f2-8d2f-4256-b586-c88dff9a1e9d",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "ac210af3-c5db-4485-932f-033ff566ee0d",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "cac2bde9-464f-48af-aa32-fa7b5219a5cf",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "cfbde2b8-54ec-4685-a437-6371ab7057e6",
+    "fields": {
+      "sport": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d237de85-82a8-495e-981f-ff15bb89c1d7",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d3736338-b29f-49cc-a153-389feb5dbf57",
+    "fields": {
+      "sport": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d495b66e-0a21-4f3d-b640-501222c3dc6e",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d5ebc6ec-c8f3-4b36-ac15-2c4058263433",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.2
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d75c27f6-a1cb-4bbc-a18f-b28fed067995",
+    "fields": {
+      "sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d82c07e1-fc96-4528-a3fa-26a2e4b37e5d",
+    "fields": {
+      "sport": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "dd8f35f9-94f6-4716-85e3-6b7faaf93ca4",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "de9975b8-783e-4549-8b41-39021166853c",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e037ea6c-0bb0-451a-a972-4d10f8fdeda1",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e076292e-24f8-449b-b8ff-6706f7d8ce2c",
+    "fields": {
+      "sport": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+      "sport_standard": "440e6f65-1b7a-4ce0-9d11-6f465889831c",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e552924e-a26d-4c5d-a6c2-63f7a594940b",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "0882a9e1-fb48-4300-9457-c66d3dd4f3ab",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e55a3a40-ca03-45fe-ad43-cc186909e85c",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.25
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e8058f92-2ede-4df6-a932-a83d53d3ed93",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "e8bd9f7c-a56f-4181-81ff-82853f420bb0",
+    "fields": {
+      "sport": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ec9303f8-0b33-4e29-9668-22c462121efc",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "0017e87d-5473-47d0-9b26-ef451721d58d",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "edb4b729-618c-40a8-864f-ef80c7488fc2",
+    "fields": {
+      "sport": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": -0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "eee5c69f-1976-4b40-9ee4-4d720b5618c6",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ef6d86e4-dd6c-424e-b036-deec7c0fdedb",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ef91ce74-dbf0-4b4d-a6a6-9a6e4e057e3f",
+    "fields": {
+      "sport": "84ee0d4e-1a46-414c-b517-573f729c930b",
+      "sport_standard": "114296f5-8516-49ba-bad3-f2ed31844c78",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "efd2f5bf-5d23-4311-979d-07790c7ef582",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "e5298e71-20e4-4dc5-8c8b-4116fd9ee6d3",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f0db4152-6774-4c79-b261-c6d5e6e4a394",
+    "fields": {
+      "sport": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f17c135d-b5f1-4527-94fd-c1ba9da68c5d",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f1b9c51d-d6d7-4962-b4ca-b093f101cd3c",
+    "fields": {
+      "sport": "2e930b67-b635-4627-b51d-76850a808953",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f20e8533-3ce6-4df2-ad84-4d8d73f51811",
+    "fields": {
+      "sport": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+      "sport_standard": "a667255b-fa40-4962-a646-ce612dc597fc",
+      "weighting_factor": 0.5
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f4d956f0-84ad-475d-b159-83542986f8aa",
+    "fields": {
+      "sport": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f7cf544c-a7f4-44e4-a3ed-8a8caa56080d",
+    "fields": {
+      "sport": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f7df55e2-2147-47a4-a5e2-33159a32a5d7",
+    "fields": {
+      "sport": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+      "sport_standard": "26edd789-f656-4b4d-9fda-77d57bdc46f6",
+      "weighting_factor": 0.05
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f84717f3-f90e-4e69-95b4-a5b37af915ff",
+    "fields": {
+      "sport": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "f8cfd3ef-a120-4541-b64f-a67bab1a0d85",
+    "fields": {
+      "sport": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "faf10e35-062f-4f95-8602-610099e29552",
+    "fields": {
+      "sport": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.3
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "fbf70107-4949-434e-aeb0-96967370c726",
+    "fields": {
+      "sport": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+      "sport_standard": "9b1c8c65-563d-4e6a-9dac-935beb52b65b",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ff1360eb-9203-4e7d-8bc2-acea583a1299",
+    "fields": {
+      "sport": "e5b8526f-2cf3-4963-aea3-305763504635",
+      "sport_standard": "93476d15-a688-4c8b-8a5f-6023b83dc731",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ffa1328d-39c1-47c3-964b-fe362341f89e",
+    "fields": {
+      "sport": "28622542-307e-4912-9789-b49179baa0de",
+      "sport_standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "ffb07335-4e84-4421-85ae-5559745d4808",
+    "fields": {
+      "sport": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+      "sport_standard": "90a9f03e-9f1a-4a28-ab34-b93c1fcb97a4",
+      "weighting_factor": 0.15
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "d5ead86b-0bad-4557-bc92-0d203f3c1e5d",
+    "fields": {
+      "sport": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+      "sport_standard": "05330038-2097-442c-b855-2c49bbc77943",
+      "weighting_factor": 0.1
+    }
+  },
+  {
+    "model": "core.weightingfactors",
+    "pk": "a52e5365-1c4e-4844-80de-dca65d3ebd5c",
+    "fields": {
+      "sport": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+      "sport_standard": "a6a31dc7-5ec1-476b-8d9f-81cd08633432",
+      "weighting_factor": 0.2
+    }
+  }
+]
