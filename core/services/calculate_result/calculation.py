@@ -171,6 +171,7 @@ def calculate_sports_aptitude(standards_result: list):
     for st_res in standards_result:
 
         result_dict = {"id": st_res["id"], "sport_results": []}
+        #result_dict = {"id": st_res["id"], "sport_results": {}}
 
         for sport in Sport.objects.all():
             weight_factors = dict(
@@ -186,5 +187,6 @@ def calculate_sports_aptitude(standards_result: list):
                     #str_weights += str(key) + "=" + str(weight_factors[key])+","
 
             result_dict["sport_results"].append({sport.name: res})
+            #result_dict["sport_results"][sport.name] = res
         result.append(result_dict)
     return result
