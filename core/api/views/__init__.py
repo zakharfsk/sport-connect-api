@@ -1,2 +1,0 @@
-from .UserResultAPI import UserResultListAPIView
-from .UserResultAPI import LastUserResultRetrieveAPIView

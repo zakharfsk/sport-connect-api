@@ -29,6 +29,8 @@ django-environ==0.11.2
 django-filter==23.5
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
+drf-spectacular==0.28.0
+drf-standardized-errors==0.14.1
 drf-yasg==1.21.7
 drf_api_logger==1.1.15
 environs==10.3.0
@@ -84,9 +86,9 @@ tzdata==2023.3
 uritemplate==4.1.1
 urllib3==2.2.1
 vine==5.1.0
+watchdog==5.0.3
 wcwidth==0.2.12
 webencodings==0.5.1
 XlsxWriter==3.1.9
 zope.event==5.0
 zope.interface==6.1
-watchdog==5.0.3

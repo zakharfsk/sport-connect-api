@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
@@ -10,6 +11,7 @@ from users.models import User
 __all__ = ('LoginUserView',)
 
 
+@extend_schema(tags=['Authorization'])
 class LoginUserView(generics.CreateAPIView):
     serializer_class = LoginUserSerializer
     queryset = User.objects.all()

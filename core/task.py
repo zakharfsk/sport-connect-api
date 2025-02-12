@@ -1,32 +1,15 @@
-from rest_framework.reverse import reverse_lazy
-
 from core.models import UserResult
-from sport_connect_api.celery import app
+from config.celery import celery_app
 from core.services.calculate_result import calculation
-from sport_connect_api.pusher import trigger_event
 
 
-@app.task
+@celery_app.task
 def calculate_formula_results(file_path: str):
     exel_data = calculation.get_data_from_excel(file_path)
-    #print(exel_data)
     standards = calculation.calculate_standards_result(exel_data)
-    #print(standards)
-    #return None
     results = calculation.calculate_sports_aptitude(standards)
-
-
-    #print(results)
 
     for result in results:
         UserResult.objects.create(user_id=result['id'], result=result["sport_results"])
-        trigger_event(
-            result['id'],
-            'results-calculated',
-            {
-                'message': 'Results calculated successfully',
-                'url': str(reverse_lazy('core_api:last_user_result'))
-            }
-        )
 
     return results

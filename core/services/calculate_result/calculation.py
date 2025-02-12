@@ -17,13 +17,12 @@
 ]
 """
 import logging
-from pprint import pprint
 
 from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
 
-from core.models import AverageValuesStandards, Sport, WeightingFactors, SportStandard
+from core.models import AverageValuesStandards, Sport, WeightingFactors
 
 logger = logging.getLogger(__name__)
 
@@ -106,14 +105,11 @@ def calculate_standards_result(file_result: list):
         - User standards as keys and their respective calculated results.
 
     """
-    # print(file_result)
     data = []
     for res in file_result:
         d = {"id": res["id"]}
         for user_standards, value in res['standards'].items():
             try:
-                # print(f"standard name:{user_standards}")
-                # print(f"value:{value}")
                 average = AverageValuesStandards.objects.get(
                     standard__name=user_standards,
                     children_age=res['Вік'],
@@ -128,8 +124,6 @@ def calculate_standards_result(file_result: list):
                 logger.warning(f"calculate_standards_result {user_standards} not found")
 
         data.append(d)
-    # print("result:")
-    # print(data[0])
     return data
 
 
@@ -171,7 +165,6 @@ def calculate_sports_aptitude(standards_result: list):
     for st_res in standards_result:
 
         result_dict = {"id": st_res["id"], "sport_results": []}
-        #result_dict = {"id": st_res["id"], "sport_results": {}}
 
         for sport in Sport.objects.all():
             weight_factors = dict(
@@ -179,14 +172,11 @@ def calculate_sports_aptitude(standards_result: list):
                 .values_list("sport_standard__name", "weighting_factor")
             )
 
-            #str_weights=""
             res = 0
             for key, value in st_res.items():
                 if key in weight_factors:
                     res += value * weight_factors[key]
-                    #str_weights += str(key) + "=" + str(weight_factors[key])+","
 
             result_dict["sport_results"].append({sport.name: res})
-            #result_dict["sport_results"][sport.name] = res
         result.append(result_dict)
     return result

@@ -7,6 +7,8 @@ static
 rabbitmq/
 *.db
 certbot
+**/migrations/*
+!**/migrations/__init__.py
 
 ### Django ###
 *.log
