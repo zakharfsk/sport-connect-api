@@ -18,7 +18,7 @@
       "children_age": 10,
       "children_gender": "Юнак",
       "average_value": 22.8,
-      "sigma": 10.8
+      "sigma": -10.8
     }
   },
   {
@@ -73,7 +73,7 @@
       "children_age": 11,
       "children_gender": "Юнак",
       "average_value": -3.0,
-      "sigma": 6.2
+      "sigma": -6.2
     }
   },
   {
@@ -84,7 +84,7 @@
       "children_age": 11,
       "children_gender": "Юнак",
       "average_value": 34.0,
-      "sigma": 10.75
+      "sigma": 10.8
     }
   },
   {
@@ -105,8 +105,8 @@
       "standard": "f9f8fbc7-3700-4491-ad6e-79b19dfa2d59",
       "children_age": 11,
       "children_gender": "Юнак",
-      "average_value": 24.9,
-      "sigma": 2.6
+      "average_value": 24.4,
+      "sigma": -2.6
     }
   },
   {
@@ -139,7 +139,7 @@
       "children_age": 10,
       "children_gender": "Дівчина",
       "average_value": -2.4,
-      "sigma": 9.7
+      "sigma": -9.7
     }
   },
   {
@@ -183,7 +183,7 @@
       "children_age": 11,
       "children_gender": "Юнак",
       "average_value": 6.6,
-      "sigma": 1.0
+      "sigma": -1.0
     }
   },
   {
@@ -194,7 +194,7 @@
       "children_age": 11,
       "children_gender": "Дівчина",
       "average_value": 7.6,
-      "sigma": 0.9
+      "sigma": -0.9
     }
   },
   {
@@ -315,7 +315,7 @@
       "children_age": 10,
       "children_gender": "Дівчина",
       "average_value": 26.1,
-      "sigma": 2.1
+      "sigma": -2.1
     }
   },
   {
@@ -326,7 +326,7 @@
       "children_age": 10,
       "children_gender": "Юнак",
       "average_value": 24.9,
-      "sigma": 2.6
+      "sigma": -2.6
     }
   },
   {
@@ -348,7 +348,7 @@
       "children_age": 10,
       "children_gender": "Юнак",
       "average_value": -3.0,
-      "sigma": 7.5
+      "sigma": -9.5
     }
   },
   {
@@ -370,7 +370,7 @@
       "children_age": 10,
       "children_gender": "Дівчина",
       "average_value": 29.5,
-      "sigma": 9.2
+      "sigma": -9.2
     }
   },
   {
@@ -414,7 +414,7 @@
       "children_age": 10,
       "children_gender": "Юнак",
       "average_value": 6.8,
-      "sigma": 1.2
+      "sigma": -1.2
     }
   },
   {
@@ -436,7 +436,7 @@
       "children_age": 11,
       "children_gender": "Юнак",
       "average_value": 22.6,
-      "sigma": 7.2
+      "sigma": -7.2
     }
   },
   {
@@ -535,7 +535,7 @@
       "children_age": 11,
       "children_gender": "Дівчина",
       "average_value": 27.1,
-      "sigma": 10.4
+      "sigma": -10.4
     }
   },
   {
@@ -557,7 +557,7 @@
       "children_age": 10,
       "children_gender": "Дівчина",
       "average_value": 7.7,
-      "sigma": 0.8
+      "sigma": -0.8
     }
   },
   {
@@ -568,7 +568,7 @@
       "children_age": 11,
       "children_gender": "Дівчина",
       "average_value": 25.8,
-      "sigma": 2.1
+      "sigma": -2.1
     }
   },
   {
@@ -612,7 +612,7 @@
       "children_age": 11,
       "children_gender": "Дівчина",
       "average_value": 0.0,
-      "sigma": 10.0
+      "sigma": -10.0
     }
   }
 ]

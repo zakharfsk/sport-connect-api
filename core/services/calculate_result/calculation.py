@@ -68,23 +68,25 @@ def get_data_from_excel(file_path: str) -> list:
                     d[key] = val
         d["standards"][
             "Ваго-ростовий індекс (індекс маси тіла)"
-        ] = d["standards"]['Зріст, см'] / d["standards"]['Маса, гр']
+        ] = d["standards"]['Маса, гр'] / d["standards"]['Зріст, см']
 
         d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = \
-            d["standards"]['Периметр плеча напруженого, см'] / d["standards"]['Периметр плеча розслабленого, см']
+            ((d["standards"]['Периметр плеча напруженого, см'] - d["standards"]['Периметр плеча розслабленого, см']) /
+             d["standards"]['Периметр плеча розслабленого, см'] * 100)
 
-        d["standards"]["Співвідношення розмаху рук до довжини тіла стоячи, см"]= \
+        d["standards"]["Співвідношення розмаху рук до довжини тіла стоячи, см"] = \
             d["standards"]["Ширина рук, см"] - d["standards"]['Зріст, см']
 
         d["standards"]["Викрут мірної лінійки, см"] = \
             d["standards"]["Викрут мірної лінійки, см"] - d["standards"]["Ширина плечей, см"]
 
-        d.get("standards",{}).pop('Маса, гр')
+        d.get("standards", {}).pop('Маса, гр')
         d.get("standards", {}).pop('Периметр плеча розслабленого, см')
         d.get("standards", {}).pop('Периметр плеча напруженого, см')
         d.get("standards", {}).pop('Ширина плечей, см')
         d.get("standards", {}).pop('Ширина рук, см')
         data.append(d)
+
     default_storage.delete(file_path)
 
     return data
@@ -104,14 +106,14 @@ def calculate_standards_result(file_result: list):
         - User standards as keys and their respective calculated results.
 
     """
-    print(file_result)
+    # print(file_result)
     data = []
     for res in file_result:
         d = {"id": res["id"]}
         for user_standards, value in res['standards'].items():
             try:
-                #print(f"standard name:{user_standards}")
-                #print(f"value:{value}")
+                # print(f"standard name:{user_standards}")
+                # print(f"value:{value}")
                 average = AverageValuesStandards.objects.get(
                     standard__name=user_standards,
                     children_age=res['Вік'],
@@ -120,10 +122,14 @@ def calculate_standards_result(file_result: list):
 
                 result = 50 + 10 * ((value - average.average_value) / average.sigma)
                 d[user_standards] = result
+                d[user_standards + "_avg"] = average.average_value
+                d[user_standards + "_sigma"] = average.sigma
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
 
         data.append(d)
+    # print("result:")
+    # print(data[0])
     return data
 
 
@@ -164,7 +170,8 @@ def calculate_sports_aptitude(standards_result: list):
 
     for st_res in standards_result:
 
-        result_dict = {"id": st_res["id"],"sport_results":[]}
+        result_dict = {"id": st_res["id"], "sport_results": []}
+        #result_dict = {"id": st_res["id"], "sport_results": {}}
 
         for sport in Sport.objects.all():
             weight_factors = dict(
@@ -172,11 +179,14 @@ def calculate_sports_aptitude(standards_result: list):
                 .values_list("sport_standard__name", "weighting_factor")
             )
 
+            #str_weights=""
             res = 0
             for key, value in st_res.items():
                 if key in weight_factors:
                     res += value * weight_factors[key]
+                    #str_weights += str(key) + "=" + str(weight_factors[key])+","
 
             result_dict["sport_results"].append({sport.name: res})
+            #result_dict["sport_results"][sport.name] = res
         result.append(result_dict)
     return result
