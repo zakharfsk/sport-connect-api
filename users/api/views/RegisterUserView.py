@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema
 from rest_framework import generics
 from rest_framework.generics import get_object_or_404
 from rest_framework.response import Response
@@ -9,6 +10,7 @@ from users.models import User
 __all__ = ('RegisterUserView',)
 
 
+@extend_schema(tags=['Authorization'])
 class RegisterUserView(generics.CreateAPIView):
     serializer_class = RegisterUserSerializer
     queryset = User.objects.all()

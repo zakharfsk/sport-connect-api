@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-from sport_connect_api.models import BaseModel
+from config.models import BaseModel
 
 __all__ = ('User',)
 
