@@ -18,6 +18,7 @@
 """
 import logging
 
+from copy import deepcopy
 from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
@@ -57,6 +58,7 @@ def get_data_from_excel(file_path: str) -> list:
 
     for j in range(2, ws.max_row + 1):
         d = {}
+
         for i, key in enumerate(settings.LIST_TOPICS, start=1):
             val = ws.cell(row=j, column=i).value
             if val is not None:
@@ -78,6 +80,9 @@ def get_data_from_excel(file_path: str) -> list:
 
         d["standards"]["Викрут мірної лінійки, см"] = \
             d["standards"]["Викрут мірної лінійки, см"] - d["standards"]["Ширина плечей, см"]
+
+        d1=deepcopy(d.get("standards",{}))
+        d["standards_for_db"]=d1
 
         d.get("standards", {}).pop('Маса, гр')
         d.get("standards", {}).pop('Периметр плеча розслабленого, см')
@@ -122,7 +127,7 @@ def calculate_standards_result(file_result: list):
                 d[user_standards + "_sigma"] = average.sigma
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
-
+        d["standards_for_db"] = res["standards_for_db"]
         data.append(d)
     return data
 
@@ -160,8 +165,10 @@ def calculate_sports_aptitude(standards_result: list):
     - The AverageValueStandard model should have a "name_standard" field representing the name of the standard.
     - The WeightingFactors model also should have a "weighting_factor" field representing the factor to be used for calculating the sports aptitude.
     """
-    result = []
-
+    print(standards_result)
+    aptitudes = []
+    user_standards=[]
+    result={"aptitudes": aptitudes, "user_standards": user_standards}
     for st_res in standards_result:
 
         result_dict = {"id": st_res["id"], "sport_results": []}
@@ -178,5 +185,7 @@ def calculate_sports_aptitude(standards_result: list):
                     res += value * weight_factors[key]
 
             result_dict["sport_results"].append({sport.name: res})
-        result.append(result_dict)
+        aptitudes.append(result_dict)
+    result["aptitudes"] = aptitudes
+    result["user_standards"] = user_standards
     return result

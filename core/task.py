@@ -8,8 +8,8 @@ def calculate_formula_results(file_path: str):
     exel_data = calculation.get_data_from_excel(file_path)
     standards = calculation.calculate_standards_result(exel_data)
     results = calculation.calculate_sports_aptitude(standards)
-
-    for result in results:
+    aptitudes=results["aptitudes"]
+    '''for result in aptitudes:
         UserResult.objects.create(user_id=result['id'], result=result["sport_results"])
-
+'''
     return results
