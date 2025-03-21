@@ -166,7 +166,7 @@ def calculate_sports_aptitude(standards_result: list):
     - The WeightingFactors model also should have a "weighting_factor" field representing the factor to be used for calculating the sports aptitude.
     """
     print(standards_result)
-
+    result = []
     for st_res in standards_result:
 
         result_dict = {"id": st_res["id"], "sport_results": []}

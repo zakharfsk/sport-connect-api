@@ -32,7 +32,7 @@ class WeightingFactorsAdmin(admin.ModelAdmin):
 
 @admin.register(models.UserResult)
 class UserResultAdmin(admin.ModelAdmin):
-    list_display = ('user', 'result', 'standards','date_created', 'date_updated')
+    list_display = ('user', 'result', 'standards', 'date_created', 'date_updated')
 
 
 @admin.register(models.SportStandard)
