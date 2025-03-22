@@ -10,6 +10,6 @@ def calculate_formula_results(file_path: str):
     results = calculation.calculate_sports_aptitude(standards)
 
     for result in results:
-        UserResult.objects.create(user_id=result['id'], result=result["sport_results"])
+        UserResult.objects.create(user_id=result['id'], result=result["sport_results"], standards=result["standards"])
 
     return results
