@@ -4,4 +4,4 @@ set -o errexit
 set -o nounset
 
 echo "Starting celery worker..."
-celery -A sport_connect_api.celery worker --loglevel=DEBUG -P gevent -E -c 1000
+watchmedo auto-restart -d ./ -p '*.py' --recursive -- celery -A config.celery worker -l info

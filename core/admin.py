@@ -27,12 +27,12 @@ class AverageValuesStandardsAdmin(admin.TabularInline):
 
 @admin.register(models.WeightingFactors)
 class WeightingFactorsAdmin(admin.ModelAdmin):
-    list_display = ('sport', 'average_value_standard', 'weighting_factor')
+    list_display = ('sport', 'sport_standard', 'weighting_factor')
 
 
 @admin.register(models.UserResult)
 class UserResultAdmin(admin.ModelAdmin):
-    list_display = ('user', 'result', 'date_created', 'date_updated')
+    list_display = ('user', 'result', 'standards', 'date_created', 'date_updated')
 
 
 @admin.register(models.SportStandard)

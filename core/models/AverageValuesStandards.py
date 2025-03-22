@@ -1,12 +1,12 @@
 from django.db import models
 
-from sport_connect_api.models import BaseModel
+from config.models import BaseModel
 
 __all__ = ('AverageValuesStandards',)
 
 
 class AverageValuesStandards(BaseModel):
-    name_standard = models.ForeignKey('core.SportStandard', on_delete=models.CASCADE, verbose_name="Показник")
+    standard = models.ForeignKey('core.SportStandard', on_delete=models.CASCADE, verbose_name="Показник")
     children_age = models.IntegerField(choices=[(i, i) for i in range(10, 12)], verbose_name="Вік дитини", null=True)
     children_gender = models.CharField(max_length=225, choices=[("Юнак", "Юнак"), ("Дівчина", "Дівчина")],
                                        verbose_name="Стать дитини", null=True)
@@ -14,7 +14,8 @@ class AverageValuesStandards(BaseModel):
     sigma = models.FloatField(verbose_name="Сигма")
 
     def __str__(self):
-        return (f"Середнє значення по нормативу \"{self.name_standard.name}\" "
+        return (f"Середнє значення по нормативу "
+                f"\"{self.standard.name}\" "
                 f"для дітей віку {self.children_age} років та статі {self.children_gender}")
 
     class Meta:

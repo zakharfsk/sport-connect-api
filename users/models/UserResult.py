@@ -1,6 +1,6 @@
 from django.db import models
 
-from sport_connect_api.models import BaseModel
+from config.models import BaseModel
 
 __all__ = ('UserResult',)
 
@@ -11,6 +11,7 @@ class UserResult(BaseModel):
     result = models.JSONField(verbose_name="Результат")
     date_created = models.DateTimeField(auto_now_add=True, verbose_name="Дата створення")
     date_updated = models.DateTimeField(auto_now=True, verbose_name="Дата оновлення")
+    standards = models.JSONField(verbose_name="Виміри")
 
     class Meta:
         verbose_name = "Результат"

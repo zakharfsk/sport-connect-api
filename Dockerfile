@@ -52,10 +52,6 @@ COPY entrypoints/celery-worker-entrypoint.sh /start-celeryworker
 RUN sed -i 's/\r$//g' /start-celeryworker
 RUN chmod +x /start-celeryworker
 
-COPY entrypoints/celery-flower-entrypoint.sh /start-flower
-RUN sed -i 's/\r$//g' /start-flower
-RUN chmod +x /start-flower
-
 
 COPY .. .
 

@@ -8,4 +8,4 @@ __all__ = ('UserResultSerializer',)
 class UserResultSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserResult
-        fields = '__all__'
+        exclude = ('user',)

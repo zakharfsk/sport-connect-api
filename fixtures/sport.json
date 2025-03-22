@@ -1,0 +1,177 @@
+[
+  {
+    "model": "core.sport",
+    "pk": "00000000-0000-0000-0000-000000000001",
+    "fields": {
+      "name": "Баскетбол"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "07d309fc-82f7-4f90-8a82-adab5e5d72f0",
+    "fields": {
+      "name": "Бокс"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "09736297-3b9e-4294-ad46-b23fc20d7a3b",
+    "fields": {
+      "name": "Теніс"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "122a7bdc-3858-4798-b265-65cdc387bdf0",
+    "fields": {
+      "name": "Велоспорт"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "1f49ad18-0345-40bf-8f8c-17cfb3f5ca72",
+    "fields": {
+      "name": "Карате"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "28622542-307e-4912-9789-b49179baa0de",
+    "fields": {
+      "name": "Тхеквондо"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "2de44bdc-8a78-4293-a489-b501f6aa4f66",
+    "fields": {
+      "name": "Теніс настільний"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "2e930b67-b635-4627-b51d-76850a808953",
+    "fields": {
+      "name": "Футбол"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "3dafdc4d-675b-455b-8995-8721d0dff21b",
+    "fields": {
+      "name": "Дзюдо"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "3e39d914-aa32-4f07-80b5-d2d560547de9",
+    "fields": {
+      "name": "Регбі"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "5c323dfd-149a-4fe5-b903-c9b6faf868f5",
+    "fields": {
+      "name": "Плавання"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "7433ef43-0aca-45c8-810e-15c2741f3be5",
+    "fields": {
+      "name": "Фехтування"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "7770cf35-d1fa-4708-a7ba-255424f7e2dd",
+    "fields": {
+      "name": "Легка атлетика (метання)"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "84ee0d4e-1a46-414c-b517-573f729c930b",
+    "fields": {
+      "name": "Легка атлетика (біг)"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "8a8cb719-4677-4167-b53a-e5cd7302e5b0",
+    "fields": {
+      "name": "Панкратіон"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "995a1b59-9fb6-40b3-bbde-3f26d896b80d",
+    "fields": {
+      "name": "Пауерліфтинг"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "a1c364b7-a4b6-48d9-bb5a-667bc8e9fabe",
+    "fields": {
+      "name": "Веслування на байдарках та каное"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "b384b027-e1ce-4b53-8d2b-eed2a38d21ee",
+    "fields": {
+      "name": "Самбо"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "d347068d-882c-4d3b-af4c-26f5a004ee45",
+    "fields": {
+      "name": "Легка атлетика (стрибки)"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "e5b8526f-2cf3-4963-aea3-305763504635",
+    "fields": {
+      "name": "Волейбол"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "e9cb7019-2174-4c43-baa5-4891d3218cd6",
+    "fields": {
+      "name": "Боротьба вільна"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "f3a94cb1-fc0c-4746-89e2-7eb465fd463a",
+    "fields": {
+      "name": "Кікбоксинг"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "f52edfc8-2de6-4d80-bcec-18d6ab4a8587",
+    "fields": {
+      "name": "Футзал"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "fc2f98a4-e30d-47b7-a305-ad57b19aa28e",
+    "fields": {
+      "name": "Важка атлетика"
+    }
+  },
+  {
+    "model": "core.sport",
+    "pk": "fddbfea2-af5e-4349-ad0d-9eaee6a1e132",
+    "fields": {
+      "name": "Гандбол"
+    }
+  }
+]

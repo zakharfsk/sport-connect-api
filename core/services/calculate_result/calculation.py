@@ -18,6 +18,7 @@
 """
 import logging
 
+from copy import deepcopy
 from openpyxl import load_workbook
 from django.conf import settings
 from django.core.files.storage import default_storage
@@ -57,6 +58,7 @@ def get_data_from_excel(file_path: str) -> list:
 
     for j in range(2, ws.max_row + 1):
         d = {}
+
         for i, key in enumerate(settings.LIST_TOPICS, start=1):
             val = ws.cell(row=j, column=i).value
             if val is not None:
@@ -66,12 +68,29 @@ def get_data_from_excel(file_path: str) -> list:
                 else:
                     d[key] = val
         d["standards"][
-            "Вагово-ростовий індекс (індекс маси тіла)"
-        ] = d["standards"]['Зріст, см'] / d["standards"]['Маса, гр']
+            "Ваго-ростовий індекс (індекс маси тіла)"
+        ] = d["standards"]['Маса, гр'] / d["standards"]['Зріст, см']
 
         d["standards"]["Індекс розвитку мускулатури (периметр плеча напруженого/периметр плеча розслабленого)"] = \
-            d["standards"]['Периметр плеча напруженого, см'] / d["standards"]['Периметр плеча розслабленого, см']
+            ((d["standards"]['Периметр плеча напруженого, см'] - d["standards"]['Периметр плеча розслабленого, см']) /
+             d["standards"]['Периметр плеча розслабленого, см'] * 100)
+
+        d["standards"]["Співвідношення розмаху рук до довжини тіла стоячи, см"] = \
+            d["standards"]["Ширина рук, см"] - d["standards"]['Зріст, см']
+
+        d["standards"]["Викрут мірної лінійки, см"] = \
+            d["standards"]["Викрут мірної лінійки, см"] - d["standards"]["Ширина плечей, см"]
+
+        d1=deepcopy(d.get("standards",{}))
+        d["standards_for_db"]=d1
+
+        d.get("standards", {}).pop('Маса, гр')
+        d.get("standards", {}).pop('Периметр плеча розслабленого, см')
+        d.get("standards", {}).pop('Периметр плеча напруженого, см')
+        d.get("standards", {}).pop('Ширина плечей, см')
+        d.get("standards", {}).pop('Ширина рук, см')
         data.append(d)
+
     default_storage.delete(file_path)
 
     return data
@@ -97,14 +116,18 @@ def calculate_standards_result(file_result: list):
         for user_standards, value in res['standards'].items():
             try:
                 average = AverageValuesStandards.objects.get(
-                    name_standard__name=user_standards,
+                    standard__name=user_standards,
                     children_age=res['Вік'],
                     children_gender=res['Стать']
                 )
+
                 result = 50 + 10 * ((value - average.average_value) / average.sigma)
                 d[user_standards] = result
+                d[user_standards + "_avg"] = average.average_value
+                d[user_standards + "_sigma"] = average.sigma
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
+        d["standards_for_db"] = res["standards_for_db"]
         data.append(d)
     return data
 
@@ -142,19 +165,28 @@ def calculate_sports_aptitude(standards_result: list):
     - The AverageValueStandard model should have a "name_standard" field representing the name of the standard.
     - The WeightingFactors model also should have a "weighting_factor" field representing the factor to be used for calculating the sports aptitude.
     """
+    print(standards_result)
     result = []
-    for sport in Sport.objects.all():
-        weight_factors = dict(
-            WeightingFactors.objects.filter(sport=sport.pk)
-            .values_list("average_value_standard__name_standard__name", "weighting_factor")
-        )
+    for st_res in standards_result:
 
-        for st_res in standards_result:
+        result_dict = {"id": st_res["id"], "sport_results": [], "standards": []}
+
+        for sport in Sport.objects.all():
+            weight_factors = dict(
+                WeightingFactors.objects.filter(sport=sport.pk)
+                .values_list("sport_standard__name", "weighting_factor")
+            )
+
             res = 0
-            result_dict = {"id": st_res["id"]}
             for key, value in st_res.items():
                 if key in weight_factors:
                     res += value * weight_factors[key]
-            result_dict[sport.name] = res
-            result.append(result_dict)
+
+            result_dict["sport_results"].append({sport.name: res})
+
+        for standard,val in st_res["standards_for_db"].items():
+            result_dict["standards"].append({standard:val})
+
+        result.append(result_dict)
+
     return result

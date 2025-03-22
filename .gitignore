@@ -4,10 +4,11 @@
 env
 data
 static
-nginx-conf.d/api.sport-connect.co.ua.conf
 rabbitmq/
 *.db
 certbot
+**/migrations/*
+!**/migrations/__init__.py
 
 ### Django ###
 *.log

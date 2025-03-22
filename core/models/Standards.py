@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.db import models
 
-from sport_connect_api.models import BaseModel
+from config.models import BaseModel
 
 __all__ = ('SportStandard',)
 
@@ -14,5 +14,5 @@ class SportStandard(BaseModel):
         return self.name
 
     class Meta:
-        verbose_name = "Стандарт"
-        verbose_name_plural = "Стандарти"
+        verbose_name = "Норматив"
+        verbose_name_plural = "Нормативи"
