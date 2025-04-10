@@ -1,0 +1,1 @@
+from .calculate_result.calculation import calculate_sports_aptitude
