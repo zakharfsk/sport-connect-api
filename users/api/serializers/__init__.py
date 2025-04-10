@@ -2,3 +2,5 @@ from .LoginUserSerializer import LoginUserSerializer
 from .RegisterUserSerializer import RegisterUserSerializer
 from .SchoolsSerializer import SchoolsSerializer
 from .UserSerializer import ShowUserSerializer, UpdateUserSerializer
+from .Sport import SportSerializer
+from .SportSchoolSerializer import SportSchoolSerializer
