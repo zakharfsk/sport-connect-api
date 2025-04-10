@@ -18,7 +18,7 @@ def calculate_formula_results(file_path: str):
             standards=result["standards"],
         )
         user = User.objects.get(id=result["id"])
-        requests.post(
+        response = requests.post(
             "https://exp.host/--/api/v2/push/send",
             json={
                 "to": f"ExponentPushToken[{user.fcm_token}]",
@@ -26,5 +26,6 @@ def calculate_formula_results(file_path: str):
                 "body": "Результати тестування доступні в додатку клацай та дивись!!!",
             },
         )
+        print(response.text)
 
     return results
