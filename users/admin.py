@@ -11,11 +11,15 @@ class UserAdmin(admin.ModelAdmin):
         "first_name",
         "last_name",
         "email",
+        "fcm_token",
         "is_staff",
         "is_active",
         "date_joined",
     )
-    list_display_links = ("username", "id",)
+    list_display_links = (
+        "username",
+        "id",
+    )
     list_filter = (
         "user_school",
         "user_classroom",
@@ -23,12 +27,18 @@ class UserAdmin(admin.ModelAdmin):
         "user_age",
         "is_superuser",
         "is_staff",
-        "is_active"
+        "is_active",
     )
     search_fields = ("username", "first_name", "last_name", "email")
     filter_horizontal = ("groups", "user_permissions")
     ordering = ("username",)
-    readonly_fields = ("date_joined", "password", "fcm_token", "last_login", "date_joined")
+    readonly_fields = (
+        "date_joined",
+        "password",
+        "fcm_token",
+        "last_login",
+        "date_joined",
+    )
     fieldsets = (
         (
             None,
@@ -50,7 +60,7 @@ class UserAdmin(admin.ModelAdmin):
                     "user_classroom",
                     "user_age",
                     "user_gender",
-                    "fcm_token"
+                    "fcm_token",
                 )
             },
         ),
@@ -62,7 +72,7 @@ class UserAdmin(admin.ModelAdmin):
                     "is_staff",
                     "is_superuser",
                     "groups",
-                    "user_permissions"
+                    "user_permissions",
                 )
             },
         ),
@@ -73,12 +83,12 @@ class UserAdmin(admin.ModelAdmin):
 class SchoolsClassroomsAdmin(admin.TabularInline):
     model = SchoolsClassrooms
     extra = 0
-    fields = ('class_number', 'class_letter')
+    fields = ("class_number", "class_letter")
 
 
 @admin.register(Schools)
 class ModelNameAdmin(admin.ModelAdmin):
-    list_display = ('school_name', 'school_city')
-    list_filter = ('school_name',)
-    search_fields = ('school_name', 'school_city')
+    list_display = ("school_name", "school_city")
+    list_filter = ("school_name",)
+    search_fields = ("school_name", "school_city")
     inlines = (SchoolsClassroomsAdmin,)
