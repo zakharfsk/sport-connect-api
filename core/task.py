@@ -21,7 +21,7 @@ def calculate_formula_results(file_path: str):
         response = requests.post(
             "https://exp.host/--/api/v2/push/send",
             json={
-                "to": f"ExponentPushToken[{user.fcm_token}]",
+                "to": user.fcm_token,
                 "title": "Результати готові!",
                 "body": "Результати тестування доступні в додатку клацай та дивись!!!",
             },
