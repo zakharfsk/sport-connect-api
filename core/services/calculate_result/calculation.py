@@ -81,14 +81,14 @@ def get_data_from_excel(file_path: str) -> list:
         d["standards"]["Викрут мірної лінійки, см"] = \
             d["standards"]["Викрут мірної лінійки, см"] - d["standards"]["Ширина плечей, см"]
 
-        d1=deepcopy(d.get("standards",{}))
-        d["standards_for_db"]=d1
-
         d.get("standards", {}).pop('Маса, гр')
         d.get("standards", {}).pop('Периметр плеча розслабленого, см')
         d.get("standards", {}).pop('Периметр плеча напруженого, см')
         d.get("standards", {}).pop('Ширина плечей, см')
         d.get("standards", {}).pop('Ширина рук, см')
+
+        d1 = deepcopy(d.get("standards", {}))
+        d["standards_for_db"] = d1
         data.append(d)
 
     default_storage.delete(file_path)
@@ -125,6 +125,7 @@ def calculate_standards_result(file_result: list):
                 d[user_standards] = result
                 d[user_standards + "_avg"] = average.average_value
                 d[user_standards + "_sigma"] = average.sigma
+
             except AverageValuesStandards.DoesNotExist:
                 logger.warning(f"calculate_standards_result {user_standards} not found")
         d["standards_for_db"] = res["standards_for_db"]
@@ -167,7 +168,6 @@ def calculate_sports_aptitude(standards_result: list):
     """
     result = []
     for st_res in standards_result:
-
         result_dict = {"id": st_res["id"], "sport_results": [], "standards": []}
 
         for sport in Sport.objects.all():
@@ -183,8 +183,12 @@ def calculate_sports_aptitude(standards_result: list):
 
             result_dict["sport_results"].append({sport.name: res})
 
-        for standard,val in st_res["standards_for_db"].items():
-            result_dict["standards"].append({standard:val})
+        for standard, val in st_res["standards_for_db"].items():
+            min_val = st_res[standard+"_avg"] - st_res[standard+"_sigma"]/2
+            max_val = st_res[standard + "_avg"] + st_res[standard + "_sigma"] / 2
+            if max_val < min_val:
+                min_val, max_val = max_val, min_val
+            result_dict["standards"].append({standard: val, "min": min_val,"max": max_val})
 
         result.append(result_dict)
 
